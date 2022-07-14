@@ -19,4 +19,5 @@ We will be working with the oXygen XML Editor in this workshop, which you should
 #### Part 3: Teach basic XSLT
 to produce simple outputs that curate data and show how these can be used in simple charts and graphs.
 
-### Google Docs for detailed agenda / live note-taking during the workshop: <https://bit.ly/dh2022-XSLT>
+### Google Docs Agenda
+Detailed agenda / live note-taking during the workshop: <https://bit.ly/dh2022-XSLT>
