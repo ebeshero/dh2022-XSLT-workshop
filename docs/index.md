@@ -21,7 +21,7 @@ We will be working with the oXygen XML Editor in this workshop, which you should
 #### [Part 2: Orientation to XPath](xpath.md)
 * working with project files to retrieve data with XPath in preparation for writing XSLT
 
-#### Part 3: Teach basic XSLT
+#### [Part 3: Teach basic XSLT](xslt.md)
 to produce simple outputs that curate data and show how these can be used in simple charts and graphs.
 
 ### Google Docs Agenda
