@@ -18,7 +18,7 @@ We will be working with the oXygen XML Editor in this workshop, which you should
 * working with XML and TEI projects in multiple languages 
 * review / crash course in HTML and CSV/TSV
 
-#### Part 2: Orientation to XPath
+#### [Part 2: Orientation to XPath](xpath.md)
 * working with project files to retrieve data with XPath in preparation for writing XSLT
 
 #### Part 3: Teach basic XSLT
