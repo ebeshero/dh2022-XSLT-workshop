@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="de">
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Ferdinand Blumentritt an Hugo Schuchardt (060-01097)</title>
+        <author ana="marcrelator:aut">
+          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1160">
+            <forename>Ferdinand</forename>
+            <surname>Blumentritt</surname>
+          </persName>
+        </author>
+        <editor ana="marcrelator:edt">
+          <persName>
+            <forename>Veronika</forename>
+            <surname>Mattes</surname>
+          </persName>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher ana="marcrelator:pbl">
+          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
+                  Karl-Franzens-Universität Graz</orgName>
+        </publisher>
+        <authority ana="marcrelator:his">
+          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
+                  Informationsmodellierung - Austrian Centre for Digital Humanities,
+                  Karl-Franzens-Universität Graz</orgName>
+        </authority>
+        <distributor ana="marcrelator:rps">
+          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
+                  Asset Management System</orgName>
+        </distributor>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
+                  BY-NC 4.0</licence>
+        </availability>
+        <date ana="dcterms:issued" when="2022">2022</date>
+        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
+        <idno corresp="http://schuchardt.uni-graz.at/id/letter/856" type="PID">o:hsa.letter.856</idno>
+        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">060-01097</idno>
+      </publicationStmt>
+      <seriesStmt>
+        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
+        <respStmt ana="marcrelator:pbl">
+          <resp>Herausgeber</resp>
+          <persName ref="http://d-nb.info/gnd/111679893">
+            <forename>Bernhard</forename>
+            <surname>Hurch</surname>
+            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
+          </persName>
+        </respStmt>
+      </seriesStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <country>Österreich</country>
+            <region>Steiermark</region>
+            <settlement>Graz</settlement>
+            <institution>Karl-Franzens-Universität Graz</institution>
+            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
+            <idno type="shelfmark">01097</idno>
+          </msIdentifier>
+          <msContents>
+            <textLang mainLang="de"/>
+            <msItem>
+              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1160">
+                <forename>Ferdinand</forename>
+                <surname>Blumentritt</surname>
+              </author>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
+                  <objectType>Brief</objectType>
+                </support>
+                <extent>
+                  <measure quantity="4" unit="pages">4 Seiten</measure>
+                </extent>
+              </supportDesc>
+            </objectDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.87" ref="http://sws.geonames.org/3071677">Leitmeritz</origPlace>
+              <origDate ana="dcterms:created" when="1883-11-24">24.11.1883.</origDate>
+            </origin>
+            <provenance>
+                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
+                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
+                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
+                  </provenance>
+          </history>
+        </msDesc>
+        <bibl type="print">
+          <author>
+            <persName>
+              <forename>Veronika</forename>
+              <surname>Mattes</surname>
+            </persName>
+          </author>
+          <date when="2010">2010</date>
+          <title>"Sa Profesor Schuchardt munting alay ni F. Blumentritt": Die Briefe Ferdinand Blumentritts an Hugo Schuchardt</title>
+          <series>
+            <title>Grazer Linguistische Studien</title>
+          </series>
+          <biblScope unit="volume">74</biblScope>
+          <biblScope from="63" to="237" unit="pages">63-237</biblScope>
+        </bibl>
+        <bibl type="online">
+          <author ana="marcrelator:aut">
+            <persName>
+              <forename>Veronika</forename>
+              <surname>Mattes</surname>
+            </persName>
+          </author>
+          <date when="2013">2013</date>
+          <title>Die Korrespondenz zwischen Ferdinand Blumentritt und Hugo Schuchardt</title>
+          <series>
+            <title>Hugo Schuchardt Archiv</title>
+            <editor>
+              <forename>Bernhard</forename>
+              <surname>Hurch</surname>
+            </editor>
+          </series>
+          <ref target="http://schuchardt.uni-graz.at/id/letters/1160"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>Die Datenmodellierung orientiert sich am <ref
+            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
+               <ref
+            target="https://www.ediarum.org/">ediarum</ref> und der
+               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
+        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
+        </p>
+      </editorialDecl>
+      <projectDesc>
+        <ab>
+          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
+        </ab>
+        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
+               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
+               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
+               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
+      </projectDesc>
+      <listPrefixDef>
+        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
+          <p>Rollen-Taxonomie</p>
+        </prefixDef>
+        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
+          <p>Datumstaxonomie</p>
+        </prefixDef>
+        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
+          <p>Thesaurustaxonomie</p>
+        </prefixDef>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.856">
+        <correspAction type="sent">
+          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1160" ref="https://viaf.org/viaf/66769294">
+            <forename>Ferdinand</forename>
+            <surname>Blumentritt</surname>
+          </persName>
+          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.87" key="#GID.1" ref="http://sws.geonames.org/3071677">Leitmeritz</placeName>
+          <date when="1883-11-24">24.11.1883.</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
+            <forename>Hugo</forename>
+            <surname>Schuchardt</surname>
+          </persName>
+        </correspAction>
+      </correspDesc>
+      <textClass>
+        <keywords scheme="cirilo:normalizedPlaceNames">
+          <list>
+            <item>
+              <placeName xml:id="GID.1">
+                <country>Czechia</country>
+                <settlement>Litoměřice</settlement>
+                <name ref="http://geonames.org/3071677" type="fcode:PPL">Litoměřice</name>
+                <location>
+                  <geo>14.1318,50.53348</geo>
+                </location>
+              </placeName>
+            </item>
+          </list>
+        </keywords>
+        <keywords ana="correspondence">
+          <list>
+            <item>
+              <ref target="info:fedora/context:hsa.letters.1160" type="context">
+                        Korrespondenz Ferdinand Blumentritt - Hugo Schuchardt
+                     </ref>
+            </item>
+            <item>
+              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
+            </item>
+          </list>
+        </keywords>
+        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
+          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.967" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Networking</term>
+          </term>
+          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4057" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Koninklijk Bataviaasch Genootschap van Kunsten &amp; Wetenschappen</term>
+          </term>
+          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4059" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Biblioteca Nacional (Spanien)</term>
+          </term>
+          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.461" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Politik- und Zeitgeschichte</term>
+          </term>
+          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3230" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Société Académique Indo-Chinoise de France</term>
+          </term>
+          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.693" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Universität Graz</term>
+          </term>
+          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3934" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Universität Wien</term>
+          </term>
+          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.913" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Universität Leiden</term>
+          </term>
+        </keywords>
+        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
+          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.880" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Spanischbasierte Kreolsprache (Philippinen)</term>
+          </term>
+          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.289" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Küchenböhmisch</term>
+          </term>
+        </keywords>
+        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
+        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
+        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
+      </textClass>
+      <langUsage>
+        <language ident="de">Deutsch</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <facsimile>
+    <surface>
+      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.856" xml:id="IMG.1">
+        <desc>
+          <ref
+            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
+        </desc>
+      </graphic>
+    </surface>
+    <surface>
+      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.856" xml:id="IMG.2">
+        <desc>
+          <ref
+            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
+        </desc>
+      </graphic>
+    </surface>
+    <surface>
+      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.856" xml:id="IMG.3">
+        <desc>
+          <ref
+            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
+        </desc>
+      </graphic>
+    </surface>
+    <surface>
+      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.856" xml:id="IMG.4">
+        <desc>
+          <ref
+            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
+        </desc>
+      </graphic>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div subtype="original" type="letter" xml:id="L.856" xml:lang="de">
+        <pb facs="#IMG.1" n="1"/>
+        <dateline>Leitmeritz d. 24. Nov. 1883</dateline>
+        <opener>Muy Sr. mio y estimado amigo:</opener>
+
+        <p>Habe gestern mich herzlich gefreut, als Ihre Corresp. Karte mir übergeben wurde, denn
+               als ich in den Zeitungen von Miklosić'<note
+            n="1" place="foot" type="editorial">
+            <persName
+              ref="https://gams.uni-graz.at/o:hsa.persons#P.2200">Franz von Mikolsich
+                     (1813-1891)</persName>, bedeutender Slawist. Student und später Professor für
+                  Philosophie an der <ref
+              target="https://gams.uni-graz.at/o:hsa.subjects#S.693">Universität Graz</ref> (bis 1839), Professor für slawische Sprachen an der
+                     <ref
+              target="https://gams.uni-graz.at/o:hsa.subjects#S.3934">Universität
+                     Wien</ref> (1849-1886). Im Nachlass Schuchardts existieren <ref
+            target="https://gams.uni-graz.at/o:hsa.persons#P.2200">zwölf Briefe
+                     Miklosichs</ref> (Briefe Nr. 07369-07380).</note> Jubilaeum<note
+            n="2" place="foot" type="editorial">Schuchardt widmete <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2200">Miklosich</persName> zum 70.
+                  Geburtstag sein Werk über das Slawo-Deutsche und Slawo-Italienische (<bibl>
+              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">Schuchardt
+                        1884a</ref>
+
+            </bibl>), in das Blumentritts zahlreiche böhmischen Beispiele
+                  eingeflossen sind.</note> las, wurde es mir recht bange zu Muthe, ich dachte mir
+               die creolischen Studien pcto Filipinas sind beendet, mit der Lieferung böhmischer
+                  Dalken<note
+            n="3" place="foot"
+              type="editorial">Dalken: eigentlich böhmische
+                  Mehlspeise, Blumentritt verwendet den Begriff scherzhaft für <ref target="https://gams.uni-graz.at/o:hsa.languages#L.289">küchenböhmische</ref>
+                  Beispiele, die er Schuchardt regelmäßig schreibt.</note> ist es auch nun vorbei
+               und somit hätte ich nun keine Gelegenheit mehr Ihnen zu schreiben. Aber unverhofft
+               kommt oft, daher lasse ich den armen linkshändigen Rodrigo de Oviedo leben, hoch
+               leben, denn ohnedies wird er als guter Sohn der römischen Mutter gewiss von San Pedro
+               in den Himmel gelassen worden sein.</p>
+        <p>Das Manuscrit befindet sich in den Händen des Augustiner Provinzials der böhmischen
+               Ordensprovinz zu Prag-Kleinseiter, Thomasgasse, Kloster S. Thomas (in dessen Kirche
+               ich getauft worden bin und dessen köstliches Bier ich als Studio sehr gerne getrunken
+               habe). Schreiben Sie nicht eher, als ich von einem befreundeten Augustiner-Professor
+               aus Leipa alle Titulaturen des P. Provincial bekommen, denn dieser hält ungemein viel
+               darauf, insbesondere auf das "Phil. Cand."! Er ist ein Sonderling, kurz angebunden,
+               mitunter s-grob, mitunter wieder burschikos, kurz wie alle Sonderlinge im Grunde
+               seines Herzens ein ganz guter Kerl (Der P.S. Agustin verzeihe meine Grobheit!)</p>
+        <pb facs="#IMG.2" n="2"/>
+        <p>Sollte der kleine Mönch – was ich aber für unwahrscheinlich halte – Schwierigkeiten
+               machen (z.B. wenn's Bier nicht schmeckt), so wird Hofrath Hoefler ihn weich stimmen.
+               Übrigens ist so etwas nicht zu befürchten, behielt ich doch das Mspt. länger als 2,
+               ich glaube sogar drei Jahre!</p>
+        <p>Adressen für creolische Studien:</p>
+        <p>- R. Rost<note n="4" place="foot" type="editorial">S. FN zu Brief Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.367">1054</ref>.</note>,
+               Bibliothekar des Indischen Amtes</p>
+        <p>London, India Office</p>
+        <p>- Dr. I. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4054">Schetelig</persName>
+          <note n="5" place="foot" type="editorial">Hier muss Dr. A.
+                  Schetelig gemeint sein. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4054">Arnold Schetelig (1835-1900)</persName>, deutscher Mediziner und Ethnograph,
+                  Ostasienexperte. Veröffentlichte 1869 <bibl>
+              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2188">
+                <hi rend="unknown" rendition="#none">On the natives of
+                     Formosa</hi>
+              </ref>
+            </bibl>. </note> Homburg v.d.H.</p>
+
+        <p>Bitte diese Sendung mit der Francatur für das Ausland zu versehen, den[n] Sch. bringt
+               den Winter in Italien oder Südfrankreich, meist in Nervi zu. Sch. brachte Jahre in
+               Ostasien zu, brachte dann schöne Skelette von den Philippinen und Vocabulare von
+               mehreren malaiischen Dialectstämmen der Insel Formosa heim.<note
+            n="6" place="foot" type="editorial">In diesem Satz sind die Verben „bringt“, und zweimal „brachte“
+                  (die unterschiedlich verwendet werden) von Schuchardt rot unterstrichen.</note> Er
+               ist jetzt sehr kränklich, auch hat er einen bedeutenden Theil seines in China
+               erworbenen Vermögens durch einen Bankerott eingebüsst, nimmt aber trotz alledem an
+               allen Ostasien betreffenden linguistischen, ethnographischen u. anthropologischen
+               Studien den lebhaftesten Antheil. Er ist eine sehr sympathische Persönlichkeit.</p>
+        <p>Nicht auch recommandieren?</p>
+        <p>- P.J.B.C. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4055">Robidé van der
+                  Aa</persName>
+          <note n="7" place="foot" type="editorial">
+            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4055">Pierre Jean Baptiste Charles
+                     Robidé van der Aa (1832-1887)</persName>, niederländischer Indonesienforscher
+                  und Geograph. Beschäftigte sich wissenschaftlich mit den niederländischen Kolonien
+                  und veröffentlichte unter dem Pseudonym Robrecht van Peene.</note>
+        </p>
+        <p>Haag</p>
+        <p>- <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4056">S.C.J.W. van
+                  Musschenbroek</persName>
+          <note n="8" place="foot" type="editorial">
+            <persName
+              ref="https://gams.uni-graz.at/o:hsa.persons#P.4056">S.C.J.W. van Musschenbroek
+                     (1827-1883)</persName>, niederländischer Jurist, lebte von 1855-1876 als
+                  Richter und Biologe auf Ternate. Erster Direktor des Museums der <hi
+              rend="unknown" rendition="#none">Kolonialen Vereniging</hi>. Galt als Experte
+                  für Niederländisch Indien (Indonesien). Als Blumentritt Schuchardt den Kontakt
+                  vermittelt, war Musschenbroek bereits verstorben (7. November 1883).</note>
+        </p>
+        <p>Leiden</p>
+        <pb facs="#IMG.3" n="3"/>
+        <p> - Bataviaasch Genootschap van Kunsten &amp; Wetenschapen<note n="9" place="foot"
+              type="editorial">Im Nachlass Schuchardts existieren 13 Briefe der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4057">Bataviaasch Genootschap
+                     van Kunsten &amp; Weterschapen</ref> (Briefe Nr. A0156-A0168), allerdings ist
+                  der erste schon aus dem Jahr 1882.</note>
+        </p>
+        <p> Batavia</p>
+        <p> --------------------</p>
+        <p>
+          <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.4056">Musschenbroek</persName>
+               kenne ich sonst nicht weiter, als dass Hofr. Meyer mir rieth ihm mein Vocabular
+               einzusenden, da er sich besonders mit derartigem Genre befasse, dasselbe schrieb mir
+               Prof. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4058">Dozy</persName>
+          <note n="10" place="foot" type="editorial">Vermutlich <persName
+              ref="https://gams.uni-graz.at/o:hsa.persons#P.4058">Prof. Reinhart Pieter Anne
+                     Dozy (1820-1883)</persName>, niederländischer Orientalist und Historiker an der
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.913">Universität
+                     Leiden</ref>.</note>. Geantwortet hat er mir aber bis heute noch nicht.</p>
+
+        <p>Die Spanier, die ich kenne, sind alle des Deutschen mehr oder weniger unkundig, Sie
+               könnten aber jedenfalls meiner Bitte willfahren und der Biblioteca nacional<note
+            n="11" place="foot" type="editorial">
+            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4059">Spanische
+                     Nationalbibliothek in Madrid</ref>.</note> ein Exemplar schenken, ebenso möchte
+               ich bitten der Société Académique Indo-Chinoise ein Geschenke zumachen per
+               Adresse</p>
+        <p>Marquis de Croizier</p>
+        <p> Paris</p>
+        <p> 10 boulevard de la Saussaye</p>
+        <p> Parc de Neuilly</p>
+        <p>Nicht umsonst würden Sie ein Exemplar dem Philippinenforscher</p>
+        <p>Dr. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3228">F.
+               Jagor</persName>
+        </p>
+        <p>Berlin</p>
+        <p>Blumeshof 3</p>
+        <p>senden.</p>
+        <p> ex.</p>
+        <pb facs="#IMG.4" n="4"/>
+        <p>Mit <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.2349">Pardo de
+                  Tavera</persName> stehe ich jetzt in lebhaftem Verkehre, er ist so ein kleiner
+               Freund der Pronunciamientos und ich suche ihn hievon zu bekehren, die Briefe sind
+               beiderseits sehr diplomatisch gehalten, denn offen bekennt er nicht Farbe und ich
+               kämpfe so recht mit Dreschflegeln, als ob ich seine Neigungen nicht durchschaute. Die
+               Spanier sind liebe Kerle, aber entsetzliche Wirrköpfe in der Politik, denken sie
+               sich, er schreibt mir auf meinen entrüsteten Brief (Alfonso-Paris)<note
+            n="12" place="foot"
+            type="editorial">1883 unternahm Alfonso XII. eine Reise durch
+                  Mitteleuropa. Vermutlich wird hier auf einen Vorfall angespielt, bei dem der König
+                  in Paris ausgepfiffen wurde.</note>, wenn er Franzose wäre, er hätte auch
+               mitgepfiffen, die Antwort, die ich ihm gab, war durchaus nicht schmeichelhaft, aber
+               er ist als Caballero darüber hinweggegangen. Von ihm erfuhr ich, dass Dr. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4060">Sancianco</persName>
+          <note n="13" place="foot" type="editorial">
+            <persName
+              ref="https://gams.uni-graz.at/o:hsa.persons#P.4060">Gregorio Sancianco
+                     (1852-1897)</persName>, philippinischer Jurist in Manila und Madrid.
+                  Reformator, Kritiker der spanischen Kolonialmacht, Vorläufer <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2531">Rizal</persName>s. Autor von
+                        <bibl>
+              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2192">
+                <hi rend="unknown" rendition="#none">El progreso de Philippinas</hi>
+                        (1881)</ref>
+            </bibl>.</note>, der Verfasser eines mit phantastischen
+               Reformplänen getränkten Werkes über die Philippinen, ein chinesischer Mestize wäre.
+               -------------</p>
+        <closer>
+          <salute>Leben Sie wohl und gedenken Sie manchmal</salute>
+          <lb/>
+          <salute>Ihres getreuen</salute>
+          <lb/>
+          <signed>
+            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1160">F.
+                     Blumentritt</persName>
+          </signed>
+        </closer>
+      </div>
+    </body>
+  </text>
+</TEI>

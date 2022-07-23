@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="ps.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="es">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>[1542]. Carta de Pedro López de la Cañada, tañedor de vihuela, para su tío. Edición electrónica</title>
+				<sponsor>CLUL, Centro de Linguística da Universidade de Lisboa</sponsor>
+				<funder>ERC, European Research Council - 7FP/ERC Advanced Grant 2011 GA295562</funder>
+				<respStmt><resp>Proyecto</resp><name xml:id="PS">PS, Post Scriptum</name></respStmt> 
+				<respStmt><resp>Coordinación</resp><name xml:id="RM">Rita Marquilhas</name></respStmt> 
+				<respStmt><resp>Transcripción</resp><name xml:id="CSS">Carmen Serrano Sánchez</name></respStmt> 
+				<respStmt><resp>Anotación POS</resp><name>Gael Vaamonde</name></respStmt> 
+				<respStmt><resp>Parsing</resp><name>Rosabel San Segundo</name></respStmt> 
+				<respStmt><resp>Edición modernizada</resp><name xml:id="GV">Gael Vaamonde</name></respStmt> 
+				<respStmt><resp>Revisión</resp><name/></respStmt> 
+				<respStmt><resp>Palabras-clave</resp><name>Carmen Serrano Sánchez</name></respStmt> 
+				<respStmt><resp>Contextualización</resp><name>Carmen Serrano Sánchez</name></respStmt>
+			</titleStmt>
+			<publicationStmt> 
+				<publisher>CLUL, Centro de Linguística da Universidade de Lisboa</publisher> 
+				<address> 
+					<addrLine>Av. Professor Gama Pinto, 2</addrLine> 
+					<addrLine>1649-003 Lisboa-Portugal</addrLine>
+				</address> 
+				<pubPlace>Lisboa</pubPlace> 
+				<date when="2013">2013</date> 
+				<availability status="free"><p>Free download; CLUL is recognised as author by a set of ELRA licences</p></availability> 
+			</publicationStmt>
+			<sourceDesc>
+					<msDesc>
+						<msIdentifier>
+							<country>España</country>
+							<settlement>Madrid</settlement>
+							<institution ref="pscdd:AHN">Archivo Histórico Nacional</institution>
+							<repository xml:id="INQ">Inquisición</repository>
+							<collection>Tribunal de Distrito de la Inquisición de Toledo</collection>
+							<idno>Legajo 26, Expediente 18</idno>
+						</msIdentifier>
+						<msContents>
+							<summary>Pedro López de la Cañada informa a su tío de que se encuentra preso en la cárcel de Ocaña (Toledo) y le solicita que acuda a verle con el fin de que pueda salir libre.</summary>
+							<msItem>
+								<locus>10r-v</locus>
+								<textLang mainLang="es"/>
+							</msItem>
+						</msContents>
+						<physDesc>
+							<objectDesc form="letter">
+								<supportDesc>
+									<support>un folio de papel escrito por recto y verso.</support>
+									<extent>
+										<dimensions scope="all" unit="mm">
+											<height>295</height>
+											<width>195</width>
+										</dimensions>
+									</extent>
+									<condition><p>la encuadernación esconde el final de las líneas del folio 10v.</p></condition>
+								</supportDesc>
+								<layoutDesc>
+									<layout>cinco líneas en blanco entre la fórmula de saludo y el inicio del texto.</layout>
+								</layoutDesc>
+							</objectDesc>
+							<accMat>
+								<p><quote xml:lang="es" type="superscript" subtype="receiver"><figure><figDesc>cruz</figDesc></figure> <lb/> Al mui vertuoso <abbr>S</abbr> el <abbr>Sor</abbr> mi tio</quote></p>
+							</accMat>
+						</physDesc>
+						<additional>
+							<adminInfo>
+								<availability><p>Para hacer uso de las imágenes es necesaria la autorización del Archivo Histórico Nacional.</p></availability>
+							</adminInfo>
+							<surrogates>
+								<ref></ref>
+								<cit><bibl>facsímile digital guardado como fichero JPEG</bibl></cit>
+							</surrogates>
+						</additional>
+					</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc><p><ptr target="psodd:ps_projectDescEs"/></p></projectDesc>
+			<editorialDecl><p><ptr target="psodd:ps_editorialDeclEs"/></p></editorialDecl>
+			<listPrefixDef>
+				<prefixDef ident="psodd" matchPattern="(.+)" replacementPattern="ps_odd.xml#$1">
+					<p>El prefijo <mentioned>psodd</mentioned> remite al archivo externo <mentioned>ps_odd.xml</mentioned>. Esta remisión apunta a los apartados de ese archivo dedicados a la descripción general del proyecto, los criterios de edición y las taxonomías utilizadas, respectivamente.</p>
+				</prefixDef>
+				<prefixDef ident="pscdd" matchPattern="(.+)" replacementPattern="cdd.xml#$1">
+					<p>El prefijo <mentioned>pscdd</mentioned> remite al archivo externo <mentioned>cdd.xml</mentioned>, que incluye las fichas biográficas de los participantes y la lista completa de instituciones visitadas.</p>
+				</prefixDef>
+				<prefixDef ident="pskw" matchPattern="(.+)" replacementPattern="kw.xml#$1">
+					<p>El prefijo <mentioned>pskw</mentioned> remite al archivo externo <mentioned>kw.xml</mentioned>, que almacena en español, portugués e inglés el conjunto de palabras clave utilizadas para la clasificación sociohistórica de PS.</p>
+				</prefixDef>
+			</listPrefixDef>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<catRef scheme="psodd:ps_type" target="psodd:family"/>
+				<catRef scheme="psodd:ps_pragmatics" target="psodd:request"/>
+				<catRef scheme="psodd:ps_linguisticSource"/>
+				<classCode scheme="psodd:ps_balancedSelection">0</classCode>
+				<keywords>
+					<term n="1" key="KW.xml#K59">Correo</term>
+					<term n="2" key="KW.xml#K60">Correspondencia</term>
+					<term n="3" key="KW.xml#K96">Escritura cifrada</term>
+					<term n="4" key="KW.xml#K134">Justicia</term>
+					<term n="5" key="KW.xml#K176">Prisión</term>
+					<term n="6" key="KW.xml#K233">Violación de correspondencia</term>
+				</keywords>
+			</textClass>
+			<creation/>
+			<correspDesc>
+				<correspAction type="sent">
+					<persName ref="pscdd:PLC1" xml:id="PLC1" cert="high">Pedro López de la Cañada</persName>
+					<location cert="0" type="origin">
+						<placeName>España, Toledo, Ocaña</placeName>
+						<geo>39.9569147 -3.4982579</geo>
+					</location>
+					<date cert="0" when="1542-11-28" when-custom="1542.11.28"/>
+				</correspAction>
+				<correspAction type="received">
+					<persName ref="pscdd:AN129" cert="unknown">Anónimo129</persName>
+					<location cert="0" type="destination">
+						<placeName>España, Salamanca</placeName>
+						<geo></geo>
+					</location>
+				</correspAction>
+			</correspDesc>
+			<settingDesc><p>El reo de este proceso era Pedro López de la Cañada, músico y maestro de danza. Fue acusado por la Inquisición de Toledo del delito de bigamia por haberse casado dos veces: primero con Lucía de Aguirre en Salamanca hacia 1541 y después con María Alonso en Ocaña (Toledo) a mediados de 1542. Antes había contraído matrimonio con Ana de Osorio, pero el casamiento fue anulado. También se sospechaba que podía haberse casado con una joven de la corte, si bien este hecho no pudo probarse. Las cartas que Pedro López de la Cañada escribió a sus familiares fueron redactadas desde la cárcel real de Ocaña (Toledo), interceptadas antes de salir de prisión e incorporadas a su proceso como prueba. En ellas empleó un método de cifrado consistente en la sustitución de las vocales por una letra "p", sobre cuyo caído trazaba diversas rayas horizontales, de una a cinco, indicando con este número cuál era la vocal reemplazada. Finalmente, Pedro López de la Cañada fue condenado a abjurar de levi en auto público de fe y a una pena de destierro por dos años de la ciudad y arzobispado de Toledo.</p> <p>Bibliografía:</p> <p>Serrano Sánchez, Carmen (2014), "El hombre de los tres nombres: cartas de un músico bígamo ante el Santo Oficio", en Castillo Gómez, Antonio y Sierra Blas, Verónica (dirs.), Cartas - Lettres - Lettere. Discursos, prácticas y representaciones epistolares (siglos XIV-XX), Alcalá de Henares (Madrid), Universidad de Alcalá, pp. 349-364.</p>
+			</settingDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2013-03">Carmen Serrano Sánchez: Codificación XML y contexto situacional</change> 
+			<change when="2015-11">Fernanda Pratas: sumário e contexto em inglês</change> 
+			<change when="2016-03-04">Gael Vaamonde: Anotación POS</change> 
+			<change when="2016-10-01">Rosabel San Segundo: Anotación sintáctica</change>
+			<change xml:lang="en">							
+				<p xml:id="title">Family letter from Pedro López de la Cañada, musician, to his uncle.</p>
+				<p xml:id="summary">The author informs his uncle that he is being held in jail in Ocaña (Toledo), and asks him to go there soon and try to set him free.</p>
+				<p xml:id="context">Pedro López de la Cañada, musician, was accused of bigamy by the Inquisition of Toledo: he married a second time when his first wife was still alive. Even before that, he had gotten married to a different woman, but that marriage had been annulled. There was also the suspicion that he might have married another young woman, but this was never confirmed. The letters that he wrote to his family from the jail in Ocaña (Toledo) were intercepted and included in his Inquisition files as a proof of his crimes. In them, he used a code that consisted of replacing all the vowels by the letter "p" - over each false "p" he put one to five horizontal lines, thus signaling the vowel that was meant to be. He was later condemned to an "auto de fe" and to stay out of Toledo for two years.</p>
+			</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body><pb n="10r" facs="PS4000_2.JPG"/><lb break="yes"/>
+			<opener>
+				<salute>
+					<figure><figDesc>cruz</figDesc></figure>
+				</salute> <lb break="yes"/>
+				<salute>
+					<w lemma="señor" msd="NP00000" pos="N"><choice><abbr>Sor</abbr><expan>Señor</expan></choice></w> 
+					<w lemma="tío" msd="NP00000" pos="N"><choice><orig>tio</orig><reg>tío</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</salute>
+			</opener>
+			<p>
+				<s>
+					<w lemma="el" msd="DA0FS0" pos="D"><choice><orig>la</orig><reg>La</reg></choice></w> 
+					<w lemma="presente" msd="AQ0CS0" pos="A">presente</w> 
+					<w lemma="ser" msd="VSIP3S0" pos="V">es</w> 
+					<w lemma="para" msd="SPS00" pos="S">para</w> 
+					<w lemma="hacer" msd="VMN0000" pos="V"><choice><orig>azer</orig><reg>hacer</reg></choice></w> 
+					<w lemma="saber" msd="VMN0000" pos="V">saber</w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="como" msd="CS" pos="C">como</w> 
+					<w lemma="yo" msd="PP1CSN00" pos="P">yo</w> 
+					<w lemma="estar" msd="VMIP1S0" pos="V">estoy</w> 
+					<w lemma="y" msd="CC" pos="C">y</w> 
+					<w lemma="quedar" msd="VMIP1S0" pos="V">quedo</w> 
+					<w lemma="preso" msd="AQ0MS0" pos="A">preso</w> 
+					<w lemma="en" msd="SPS00" pos="S">en</w> 
+					<w lemma="este" msd="DD0FS0" pos="D">esta</w> <lb break="yes"/> 
+					<w lemma="villa" msd="NCFS000" pos="N">villa</w> 
+					<w lemma="de" msd="SPS00" pos="S"><choice><orig>d</orig><reg>de</reg></choice></w> 
+					<w rend="ocaña" lemma="ocaña" msd="NP00000" pos="N"><choice><orig>ocaña</orig><reg>Ocaña</reg></choice></w> 
+					<w lemma="por" msd="SPS00" pos="S">por</w> 
+					<w lemma="cierto" msd="DI0FP0" pos="D"><choice><orig>ziertas</orig><reg>ciertas</reg></choice></w> 
+					<w lemma="acusación" msd="NCFP000" pos="N"><choice><orig>acusaziones</orig><reg>acusaciones</reg></choice></w> 
+					<w lemma="que" msd="PR0CN000" pos="P">que</w> 
+					<w lemma="me" msd="PP1CS000" pos="P">me</w> 
+					<w lemma="haber" msd="VAIP3P0" pos="V"><choice><orig>an</orig><reg>han</reg></choice></w> 
+					<w lemma="poner" msd="VMP0000" pos="V">puesto</w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="para" msd="SPS00" pos="S">para</w> <lb break="yes"/> 
+					<w>poderme
+						<w part="I" lemma="poder" msd="VMN0000" pos="V">poder</w>
+						<w part="F" lemma="me" msd="PP1CS000" pos="P">me</w></w> 
+					<w lemma="librar" msd="VMN0000" pos="V">librar</w> 
+					<w lemma="de" msd="SPS00" pos="S"><choice><orig>d</orig><reg>de</reg></choice></w> 
+					<w lemma="ellos" msd="PP3FP000" pos="P">ellas</w> 
+					<w><choice><orig>eme</orig><reg>heme</reg></choice>
+						<w part="I" lemma="haber" msd="VAIP1S0" pos="V"><choice><orig>e</orig><reg>he</reg></choice></w>
+						<w part="F" lemma="me" msd="PP1CS000" pos="P">me</w></w> 
+					<w lemma="llamar" msd="VMP0000" pos="V">llamado</w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> 
+					<w lemma="corona" msd="NP00000" pos="N"><choice><orig>corona</orig><reg>Corona</reg></choice></w> 
+					<w lemma="y" msd="CC" pos="C">y</w> 
+					<w lemma="estar" msd="VMIP3S0" pos="V"><choice><orig>esta</orig><reg>está</reg></choice></w> 
+					<w lemma="ya" msd="RG" pos="R">ya</w> 
+					<w lemma="para" msd="SPS00" pos="S">para</w> <lb break="yes"/> 
+					<w lemma="dar" msd="VMN0000" pos="V">dar</w> 
+					<w lemma="sentencia" msd="NCFS000" pos="N"><choice><orig>sentenzia</orig><reg>sentencia</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="no" msd="RN" pos="R"><choice><orig>no</orig><reg>No</reg></choice></w> 
+					<w lemma="saber" msd="VMIP1S0" pos="V"><choice><orig>se</orig><reg>sé</reg></choice></w> 
+					<w lemma="el" msd="DA0NS0" pos="D">lo</w> 
+					<w lemma="que" msd="PR0CN000" pos="P">que</w> 
+					<w lemma="dios" msd="NP00000" pos="N"><choice><orig>dios</orig><reg>Dios</reg></choice></w> 
+					<w lemma="hacer" msd="VMIF3S0" pos="V"><choice><orig>ara</orig><reg>hará</reg></choice></w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="mí" msd="PP1CSO00" pos="P"><choice><orig>mi</orig><reg>mí</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="si" msd="CS" pos="C">si</w> 
+					<w lemma="me" msd="PP1CS000" pos="P">me</w> 
+					<w lemma="remitir" msd="VMIF3P0" pos="V"><choice><orig>Remitiran</orig><reg>remitirán</reg></choice></w> <lb break="yes"/> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> 
+					<w lemma="corona" msd="NP00000" pos="N"><choice><orig>corona</orig><reg>Corona</reg></choice></w> 
+					<w lemma="o" msd="CC" pos="C">o</w> 
+					<w lemma="me" msd="PP1CS000" pos="P">me</w> 
+					<w lemma="llevar" msd="VMIF3P0" pos="V"><choice><orig>llevaran</orig><reg>llevarán</reg></choice></w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="valladolid" msd="NP00000" pos="N"><choice><orig>valladolid</orig><reg>Valladolid</reg></choice></w> 
+					<w lemma="por" msd="SPS00" pos="S">por</w> 
+					<w lemma="causa" msd="NCFS000" pos="N">causa</w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="uno" msd="DI0FS0" pos="D">una</w> <lb break="yes"/> 
+					<w lemma="provisión" msd="NCFS000" pos="N"><choice><orig>provision</orig><reg>provisión</reg></choice></w> 
+					<w lemma="que" msd="PR0CN000" pos="P">que</w> 
+					<w lemma="haber" msd="VAIP3P0" pos="V"><choice><orig>an</orig><reg>han</reg></choice></w> 
+					<w lemma="traer" msd="VMP0000" pos="V"><choice><orig>traydo</orig><reg>traído</reg></choice></w> 
+					<w lemma="el" msd="DA0FP0" pos="D">las</w> 
+					<w lemma="parte" msd="NCFP000" pos="N">partes</w> 
+					<w lemma="contrario" msd="AQ0FP0" pos="A">contrarias</w> 
+					<w lemma="para" msd="SPS00" pos="S">para</w> 
+					<w lemma="que" msd="CS" pos="C">que</w> <lb break="yes"/> 
+					<w lemma="me" msd="PP1CS000" pos="P">me</w> 
+					<w lemma="remitir" msd="VMSP3P0" pos="V"><choice><orig>Remitan</orig><reg>remitan</reg></choice></w> 
+					<w lemma="allá" msd="RG" pos="R"><choice><orig>alla</orig><reg>allá</reg></choice></w><surplus reason="catchword">
+					<w><choice><orig><del hand="#PLC1">l</del></orig><reg>--</reg></choice></w></surplus>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="mas" msd="CC" pos="C"><choice><orig>mas</orig><reg>Mas</reg></choice></w> 
+					<w lemma="el" msd="DA0NS0" pos="D">lo</w> 
+					<w lemma="más" msd="RC" pos="R"><choice><orig>mas</orig><reg>más</reg></choice></w> 
+					<w lemma="cierto" msd="AQ0MS0" pos="A"><choice><orig>zierto</orig><reg>cierto</reg></choice></w> 
+					<w lemma="ser" msd="VSIF3S0" pos="V"><choice><orig>sera</orig><reg>será</reg></choice></w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> 
+					<w lemma="corona" msd="NP00000" pos="N"><choice><orig>corona</orig><reg>Corona</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="me" msd="PP1CS000" pos="P">me</w> <lb break="yes"/> 
+					<w lemma="haber" msd="VMIP3P0" pos="V"><choice><orig>an</orig><reg>han</reg></choice></w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="llevar" msd="VMN0000" pos="V">llevar</w> 
+					<w rend="d" lemma="de" msd="SPS00" pos="S"><choice><orig>d</orig><reg>de</reg></choice></w> 
+					<w rend="esta" lemma="este" msd="DD0FS0" pos="D"><choice><orig>esta</orig><reg>esta</reg></choice></w> 
+					<w lemma="villa" msd="NCFS000" pos="N">villa</w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="toledo" msd="NP00000" pos="N"><choice><orig>toledo</orig><reg>Toledo</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="porque" msd="CS" pos="C">porque</w> 
+					<w lemma="este" msd="DD0MS0" pos="D">este</w> 
+					<w lemma="vicario" msd="NCMS000" pos="N">vicario</w> 
+					<w lemma="poder" msd="VMIP3S0" pos="V">puede</w> <lb break="yes"/> 
+					<w lemma="prender" msd="VMN0000" pos="V">prender</w> 
+					<w lemma="y" msd="CC" pos="C">y</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="soltar" msd="VMN0000" pos="V">soltar</w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="en" msd="SPS00" pos="S">en</w> 
+					<w lemma="toledo" msd="NP00000" pos="N"><choice><orig>toledo</orig><reg>Toledo</reg></choice></w> 
+					<w lemma="me" msd="PP1CS000" pos="P">me</w> 
+					<w lemma="haber" msd="VMIP3P0" pos="V"><choice><orig>an</orig><reg>han</reg></choice></w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="sentenciar" msd="VMN0000" pos="V"><choice><orig>sentenziar</orig><reg>sentenciar</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="para" msd="SPS00" pos="S"><choice><orig>para</orig><reg>Para</reg></choice></w> <lb break="yes"/> 
+					<w lemma="todo" msd="DI0MS0" pos="D">todo</w> 
+					<w lemma="esto" msd="PD0NN000" pos="P">esto</w> 
+					<w lemma="suplicar" msd="VMIP1S0" pos="V"><choice><orig>soplico</orig><reg>suplico</reg></choice><note type="linguisticNote" subtype="unstressed_vowels"/></w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="que" msd="CS" pos="C">que</w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="ver" msd="VMP00SF" pos="V">vista</w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> 
+					<w lemma="presente" msd="AQ0CS0" pos="A">presente</w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> <lb break="yes"/> 
+					<w lemma="venir" msd="VMSP0S0" pos="V">venga</w> 
+					<w lemma="luego" msd="RG" pos="R">luego</w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w rend="porq" lemma="porque" msd="CS" pos="C"><choice><abbr>porq</abbr><expan>porque</expan></choice></w> 
+					<w lemma="ser" msd="VSIP3S0" pos="V">es</w> 
+					<w lemma="muy" msd="RQ" pos="R"><choice><orig>mui</orig><reg>muy</reg></choice></w> 
+					<w lemma="mucho" msd="DI0MS0" pos="D">mucho</w> 
+					<w lemma="menester" msd="NCMS000" pos="N">menester</w> 
+					<w lemma="para" msd="SPS00" pos="S">para</w> 
+					<w lemma="mi" msd="DP1CPS" pos="D">mis</w> 
+					<w rend="negozios" lemma="negocio" msd="NCMP000" pos="N"><choice><orig>ne<lb break="no"/>gozios</orig><reg>negocios</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="que" msd="CS" pos="C"><choice><orig>que</orig><reg>Que</reg></choice></w> 
+					<w lemma="me" msd="PP1CS000" pos="P">me</w> 
+					<w lemma="tocar" msd="VMIP3P0" pos="V"><choice><orig>toquan</orig><reg>tocan</reg></choice></w> 
+					<w lemma="en" msd="SPS00" pos="S">en</w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> 
+					<w lemma="honra" msd="NCFS000" pos="N"><choice><orig>onRa</orig><reg>honra</reg></choice></w> 
+					<w lemma="y" msd="CC" pos="C">y</w> 
+					<w lemma="más" msd="RC" pos="R"><choice><orig>mas</orig><reg>más</reg></choice></w> 
+					<w lemma="adelante" msd="RG" pos="R">adelante</w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> <lb break="yes"/> 
+					<w lemma="como" msd="PA000000" pos="P">como</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="saber" msd="VMIF3S0" pos="V"><choice><orig>sabra</orig><reg>sabrá</reg></choice></w> 
+					<w lemma="en" msd="SPS00" pos="S">en</w> 
+					<w lemma="venir" msd="VMG0000" pos="V"><choice><orig>biniendo</orig><reg>viniendo</reg></choice></w> 
+					<w lemma="que" msd="CS" pos="C">que</w> 
+					<w lemma="venir" msd="VMSP0S0" pos="V">venga</w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w>verme
+						<w part="I" lemma="ver" msd="VMN0000" pos="V"><choice><orig>ber</orig><reg>ver</reg></choice></w>
+						<w part="F" lemma="me" msd="PP1CS000" pos="P">me</w></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> <lb break="yes"/> 
+					<w lemma="venida" msd="NCFS000" pos="N">venida</w> 
+					<w lemma="haber" msd="VMIP3S0" pos="V"><choice><orig>a</orig><reg>ha</reg></choice></w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="ser" msd="VSN0000" pos="V">ser</w> 
+					<w lemma="por" msd="SPS00" pos="S">por</w> 
+					<w lemma="toledo" msd="NP00000" pos="N"><choice><orig>toledo</orig><reg>Toledo</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="porque" msd="CS" pos="C">porque</w> 
+					<w lemma="pensar" msd="VMIP1S0" pos="V">pienso</w> 
+					<w lemma="que" msd="CS" pos="C">que</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="me" msd="PP1CS000" pos="P">me</w> <lb break="yes"/> 
+					<w lemma="hallar" msd="VMIF3S0" pos="V"><choice><orig>allara</orig><reg>hallará</reg></choice></w> 
+					<w lemma="en" msd="SPS00" pos="S">en</w> 
+					<w lemma="el" msd="DA0FP0" pos="D">las</w> 
+					<w lemma="casa" msd="NCFP000" pos="N">casas</w> 
+					<w lemma="arzobispal" msd="AQ0CP0" pos="A"><choice><orig>azovispales</orig><reg>arzobispales</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="si" msd="CS" pos="C">si</w> 
+					<w lemma="allí" msd="RG" pos="R"><choice><orig>alli</orig><reg>allí</reg></choice></w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="me" msd="PP1CS000" pos="P">me</w> 
+					<w lemma="hallar" msd="VMSF0S0" pos="V"><choice><orig>allare</orig><reg>hallare</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> <lb break="yes"/> 
+					<w lemma="venir" msd="VMSP0S0" pos="V">venga</w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="ocaña" msd="NP00000" pos="N"><choice><orig>ocaña</orig><reg>Ocaña</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> 
+					<w lemma="cárcel" msd="NCFS000" pos="N"><choice><orig>carzel</orig><reg>cárcel</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="derecho" msd="AQ0MS0" pos="A">derecho</w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w>verme
+						<w part="I" lemma="ver" msd="VMN0000" pos="V"><choice><orig>ber</orig><reg>ver</reg></choice></w>
+						<w part="F" lemma="me" msd="PP1CS000" pos="P">me</w></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="esto" msd="PD0NN000" pos="P">esto</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="lo" msd="PP3CNA00" pos="P">lo</w> <lb break="yes"/> 
+					<w lemma="echar" msd="VMSP0S0" pos="V">eche</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="en" msd="SPS00" pos="S">en</w> 
+					<w lemma="olvido" msd="NCMS000" pos="N">olvido</w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="porque" msd="CS" pos="C">porque</w> 
+					<w lemma="ir" msd="VMIP3S0" pos="V">va</w> 
+					<w lemma="muy" msd="RQ" pos="R"><choice><orig>mui</orig><reg>muy</reg></choice></w> 
+					<w lemma="mucho" msd="RQ" pos="R">mucho</w> 
+					<w lemma="en" msd="SPS00" pos="S">en</w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> 
+					<w lemma="venida" msd="NCFS000" pos="N">venida</w> <lb break="yes"/> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="como" msd="PA000000" pos="P">como</w> 
+					<w lemma="mi" msd="DP1CSS" pos="D">mi</w> 
+					<w lemma="hermano" msd="NCMS000" pos="N"><choice><orig>ermano</orig><reg>hermano</reg></choice></w> 
+					<w rend="lo"><choice><orig><del hand="#PLC1">lo</del></orig><reg/></choice></w> 
+					<w rend="dy"><choice><orig><del hand="#PLC1">dy</del></orig><reg/></choice></w> 
+					<w lemma="lo" msd="PP3CNA00" pos="P">lo</w> 
+					<w lemma="contar" msd="VMIF3S0" pos="V"><choice><orig>contara</orig><reg>contará</reg></choice></w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="porque" msd="CS" pos="C"><choice><orig>porque</orig><reg>Porque</reg></choice></w> <lb break="yes"/> 
+					<w lemma="le" msd="PP3CSD00" pos="P">le</w> 
+					<w lemma="haber" msd="VAIP1S0" pos="V"><choice><orig>e</orig><reg>he</reg></choice></w> 
+					<w lemma="escribir" msd="VMP0000" pos="V"><choice><orig>scrito</orig><reg>escrito</reg></choice></w> 
+					<w lemma="sobre" msd="SPS00" pos="S">sobre</w> 
+					<w lemma="ello" msd="PD0NN000" pos="P">ello</w> 
+					<w lemma="y" msd="CC" pos="C">y</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="escribir" msd="VMIS1S0" pos="V"><choice><orig>escrevi</orig><reg>escribí</reg></choice><note type="linguisticNote" subtype="unstressed_vowels"/></w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vramd</orig><reg>VM</reg></choice></w> 
+					<w lemma="por" msd="SPS00" pos="S">por</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="le" msd="PP3CSD00" pos="P">le</w> 
+					<w lemma="dar" msd="VMN0000" pos="V">dar</w> <lb break="yes"/> 
+					<w lemma="enojo" msd="NCMS000" pos="N">enojo</w> 
+					<w lemma="ni" msd="CCN" pos="C">ni</w> 
+					<w lemma="pena" msd="NCFS000" pos="N">pena</w> 
+					<w lemma="ni" msd="CCN" pos="C">ni</w> 
+					<w lemma="le" msd="PP3CSD00" pos="P">le</w> 
+					<w rend="p"><choice><orig><del hand="#PLC1">p</del></orig><reg/></choice></w> 
+					<w lemma="hacer" msd="VMN0000" pos="V"><choice><orig>azer</orig><reg>hacer</reg></choice></w> 
+					<w lemma="poner" msd="VMN0000" pos="V">poner</w> 
+					<w lemma="en" msd="SPS00" pos="S">en</w> 
+					<w lemma="camino" msd="NCMS000" pos="N">camino</w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="mas" msd="CC" pos="C"><choice><orig>mas</orig><reg>Mas</reg></choice></w> 
+					<w lemma="pues" msd="CS" pos="C">pues</w> 
+					<w lemma="que" msd="CS" pos="C">que</w> <lb break="yes"/> 
+					<w lemma="dios" msd="NP00000" pos="N"><choice><orig>dios</orig><reg>Dios</reg></choice></w> 
+					<w lemma="lo" msd="PP3CNA00" pos="P">lo</w> 
+					<w lemma="querer" msd="VMIP3S0" pos="V">quiere</w> 
+					<w lemma="así" msd="RG" pos="R"><choice><orig>ansi</orig><reg>así</reg><sic>ansí</sic></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="venir" msd="VMSP0S0" pos="V">venga</w> 
+					<w lemma="luego" msd="RG" pos="R">luego</w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="porque" msd="CS" pos="C">porque</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="haber" msd="VMIP3S0" pos="V"><choice><orig>a</orig><reg>ha</reg></choice></w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="hacer" msd="VMN0000" pos="V"><choice><orig>azer</orig><reg>hacer</reg></choice></w> <lb break="yes"/> 
+					<w lemma="sino" msd="CC" pos="C">sino</w> 
+					<w lemma="venir" msd="VMN0000" pos="V">venir</w> 
+					<w lemma="y" msd="CC" pos="C">y</w> 
+					<w>tornarse
+						<w part="I" lemma="tornar" msd="VMN0000" pos="V">tornar</w>
+						<w part="F" lemma="se" msd="P00CN000" pos="P">se</w></w> 
+					<w lemma="luego" msd="RG" pos="R">luego</w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="porque" msd="CS" pos="C">porque</w> 
+					<w lemma="ser" msd="VSIP3S0" pos="V">es</w> 
+					<w lemma="menester" msd="NCMS000" pos="N">menester</w> 
+					<w rend="para" lemma="para" msd="SPS00" pos="S">parara</w> <lb break="yes"/> 
+					<w lemma="mi" msd="DP1CPS" pos="D">mis</w> 
+					<w lemma="negocio" msd="NCMP000" pos="N"><choice><orig>negozios</orig><reg>negocios</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="porque" msd="CS" pos="C">porque</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="haber" msd="VMIP3S0" pos="V"><choice><orig>a</orig><reg>ha</reg></choice></w> 
+					<w lemma="quien" msd="PR0CS000" pos="P">quien</w> 
+					<w lemma="lo" msd="PP3MPA00" pos="P">los</w> 
+					<w lemma="acabar" msd="VMSP0S0" pos="V">acabe</w> 
+					<w lemma="mejor" msd="RC" pos="R"><choice><orig>mijor</orig><reg>mejor</reg></choice><note type="linguisticNote" subtype="unstressed_vowels"/></w> 
+					<w rend="qu" lemma="que" msd="CS" pos="C"><choice><orig>qu</orig><reg>que</reg></choice></w> 
+					<w rend="es" lemma="ser" msd="VSIP3S0" pos="V"><choice><orig>es</orig><reg>es</reg></choice></w> <lb break="yes"/> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="con" msd="SPS00" pos="S">con</w> 
+					<w lemma="su" msd="DP3CS0" pos="D">su</w> 
+					<w lemma="venida" msd="NCFS000" pos="N">venida</w> 
+					<w lemma="luego" msd="RG" pos="R">luego</w> 
+					<w lemma="ser" msd="VSIP1S0" pos="V">soy</w> 
+					<w lemma="libre" msd="AQ0CS0" pos="A"><choice><orig>livre</orig><reg>libre</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="que" msd="CS" pos="C">que</w> 
+					<w lemma="por" msd="SPS00" pos="S">por</w> 
+					<w lemma="el" msd="DA0FP0" pos="D">las</w> 
+					<w lemma="cosa" msd="NCFP000" pos="N">cosas</w> <lb break="yes"/> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="acá" msd="RG" pos="R"><choice><orig>aca</orig><reg>acá</reg></choice></w> 
+					<w lemma="dinero" msd="NCMP000" pos="N">dineros</w> 
+					<w lemma="lo" msd="PP3CNA00" pos="P">lo</w> 
+					<w lemma="haber" msd="VMIP3P0" pos="V"><choice><orig>an</orig><reg>han</reg></choice></w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="hacer" msd="VMN0000" pos="V"><choice><orig>azer</orig><reg>hacer</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="hacer" msd="VMSP0S0" pos="V"><choice><orig>aga</orig><reg>haga</reg></choice></w> 
+					<w lemma="el" msd="DA0NS0" pos="D">lo</w> 
+					<w lemma="que" msd="PR0CN000" pos="P">que</w> 
+					<w lemma="mi" msd="DP1CSS" pos="D">mi</w> 
+					<w rend="ermano" lemma="hermano" msd="NCMS000" pos="N"><choice><orig><supplied resp="#CSS" reason="abandoned">erma<lb break="no"/>no</supplied></orig><reg>hermano</reg></choice></w> 
+					<w lemma="le" msd="PP3CSD00" pos="P">le</w> 
+					<w lemma="avisar" msd="VMSF0S0" pos="V">avisare</w> 
+					<w lemma="y" msd="CC" pos="C">y</w> 
+					<w lemma="también" msd="RG" pos="R"><choice><orig>tanbien</orig><reg>también</reg></choice></w> 
+					<w lemma="le" msd="PP3CSD00" pos="P">le</w> 
+					<w lemma="escribir" msd="VMIP1S0" pos="V"><choice><orig>escrivo</orig><reg>escribo</reg></choice></w> 
+					<w lemma="que" msd="CS" pos="C">que</w> 
+					<w lemma="venir" msd="VMSP0S0" pos="V">venga</w> 
+					<w lemma="con" msd="SPS00" pos="S">con</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="si" msd="CS" pos="C">si</w> 
+					<w rend="pudiere" lemma="poder" msd="VMSF0S0" pos="V">pu<lb break="no"/>diere</w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="a" msd="SPS00" pos="S"><choice><orig>a</orig><reg>A</reg></choice></w> 
+					<w lemma="mi" msd="DP1CSS" pos="D">mi</w> 
+					<w lemma="señor" msd="NP00000" pos="N">señora</w> 
+					<w lemma="ana" msd="NP00000" pos="N"><choice><orig>ana</orig><reg>Ana</reg></choice></w> 
+					<w lemma="pérez" msd="NP00000" pos="N"><choice><orig>perez</orig><reg>Pérez</reg></choice></w> 
+					<w lemma="besar" msd="VMIP1S0" pos="V"><choice><orig>veso</orig><reg>beso</reg></choice></w> 
+					<w lemma="el" msd="DA0FP0" pos="D">las</w> 
+					<w lemma="mano" msd="NCFP000" pos="N">manos</w> 
+					<w lemma="más" msd="RC" pos="R"><choice><orig>mas</orig><reg>más</reg></choice></w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="1000" msd="Z" pos="Z">mil</w> 
+					<w lemma="vez" msd="NCFP000" pos="N"><choice><orig>vezes</orig><reg>veces</reg></choice></w> <lb break="yes"/> 
+					<w lemma="y" msd="CC" pos="C">y</w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="todo" msd="DI0MP0" pos="D">todos</w> 
+					<w lemma="el" msd="DA0MP0" pos="D">los</w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="casa" msd="NCFS000" pos="N">casa</w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="con" msd="SPS00" pos="S">con</w> 
+					<w lemma="esto" msd="PD0NN000" pos="P">esto</w> 
+					<w lemma="cesar" msd="VMIP1S0" pos="V"><choice><orig>zeso</orig><reg>ceso</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+				<seg type="closer" subtype="placeName">
+					<w rend="d" lemma="de" msd="SPS00" pos="S"><choice><orig>d</orig><reg>De</reg></choice></w> 
+					<w rend="esta" lemma="este" msd="DD0FS0" pos="D"><choice><orig>esta</orig><reg>esta</reg></choice></w> 
+					<w lemma="cárcel" msd="NCFS000" pos="N"><choice><orig>carzel</orig><reg>cárcel</reg></choice></w> 
+					<w lemma="donde" msd="PA000000" pos="P"><choice><orig>do</orig><reg>donde</reg><sic>do</sic></choice></w> 
+					<w lemma="quedar" msd="VMIP1S0" pos="V">quedo</w> <lb break="yes"/> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="mandado" msd="NCMS000" pos="N">mandado</w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vasmds</orig><reg>VMs</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc></seg> 
+				<seg type="closer" subtype="date">
+					<w lemma="fecho" msd="AQ0FSP" pos="A"><choice><orig>Fecha</orig><reg>fecha</reg></choice></w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="20" msd="Z" pos="Z"><choice><orig>veyte</orig><reg>veinte</reg></choice></w> 
+					<w lemma="y" msd="CC" pos="C">y</w> 
+					<w lemma="8" msd="Z" pos="Z">ocho</w> 
+					<w rend="d" lemma="de" msd="SPS00" pos="S"><choice><orig>d</orig><reg>de</reg></choice></w> 
+					<w rend="este" lemma="este" msd="DD0MS0" pos="D"><choice><orig>este</orig><reg>este</reg></choice></w> 
+					<w lemma="mes" msd="NCMS000" pos="N">mes</w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w rend="novienbre" lemma="noviembre" msd="NCMS000" pos="N"><choice><orig>novi<lb break="no"/>enbre</orig><reg>noviembre</reg></choice></w> 
+					<w rend="d" lemma="de" msd="SPS00" pos="S"><choice><orig>d</orig><reg>de</reg></choice></w> 
+					<w rend="este" lemma="este" msd="DD0MS0" pos="D"><choice><orig>este</orig><reg>este</reg></choice></w> 
+					<w lemma="presente" msd="AQ0CS0" pos="A">presente</w> 
+					<w lemma="año" msd="NCMS000" pos="N">año</w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc></seg>
+				</s>
+			</p><lb break="yes"/>
+			<closer>
+				<salute>
+					<w lemma="a" msd="SPS00" pos="S"><choice><orig>a</orig><reg>A</reg></choice></w> 
+					<w lemma="mandamiento" msd="NCMS000" pos="N">mandamiento</w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vasmds</orig><reg>VMs</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc>
+				</salute> <lb break="yes"/> 
+				<signed>
+					<w lemma="pero" msd="NP00000" pos="N"><choice><abbr>po</abbr><expan>pero</expan><reg>Pero</reg></choice></w> 
+					<w lemma="lópez" msd="NP00000" pos="N"><choice><orig>lopez</orig><reg>López</reg></choice></w> <lb break="yes"/> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> 
+					<w rend="cañada" lemma="cañada" msd="NP00000" pos="N"><choice><orig>caña<lb break="no"/>da</orig><reg>Cañada</reg></choice></w>
+				</signed>              
+			</closer>                    
+			<postscript><pb n="10v" facs="PS4000_3.JPG"/><lb break="yes"/>
+			<p>
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="mirar" msd="VMSP0S0" pos="V">mire</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="que" msd="CS" pos="C">que</w> 
+					<w lemma="si" msd="CS" pos="C">si</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="venir" msd="VMIP3S0" pos="V">viene</w> 
+					<figure><figDesc>cruz</figDesc></figure> 
+					<w lemma="yo" msd="PP1CSN00" pos="P">yo</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="me" msd="PP1CS000" pos="P">me</w> 
+					<w lemma="poder" msd="VMIP1S0" pos="V">puedo</w> 
+					<w lemma="librar" msd="VMN0000" pos="V"><choice><orig>livrar</orig><reg>librar</reg></choice></w> 
+					<w lemma="ni" msd="CCN" pos="C">ni</w> 
+					<w rend="aca" lemma="acá" msd="RG" pos="R"><choice><orig><supplied resp="#CSS" reason="illegible">aca</supplied></orig><reg>acá</reg></choice></w> <lb break="yes"/> 
+					<w lemma="en" msd="SPS00" pos="S">en</w> 
+					<w lemma="todo" msd="DI0FS0" pos="D">toda</w> 
+					<w lemma="mi" msd="DP1CSS" pos="D">mi</w> 
+					<w lemma="vida" msd="NCFS000" pos="N">vida</w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="salir" msd="VMN0000" pos="V">salir</w> 
+					<w rend="d" lemma="de" msd="SPS00" pos="S"><choice><orig>d</orig><reg>de</reg></choice></w> 
+					<w rend="esta" lemma="este" msd="DD0FS0" pos="D"><choice><orig>esta</orig><reg>esta</reg></choice></w> 
+					<w lemma="cárcel" msd="NCFS000" pos="N"><choice><orig>carzel</orig><reg>cárcel</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="porque" msd="CS" pos="C">porque</w> 
+					<w lemma="haber" msd="VMIP3S0" pos="V"><choice><orig>ay</orig><reg>hay</reg></choice></w> 
+					<w lemma="muy" msd="RQ" pos="R"><choice><orig>mui</orig><reg>muy</reg></choice></w> 
+					<w rend="mucho" lemma="mucho" msd="RQ" pos="R"><supplied resp="#CSS" reason="hidden">mucho</supplied></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s><lb break="yes"/> 
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="mirar" msd="VMSP0S0" pos="V">mire</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="que" msd="CS" pos="C">que</w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> 
+					<w lemma="venida" msd="NCFS000" pos="N">venida</w> 
+					<w lemma="ser" msd="VSSP0S0" pos="V">sea</w> 
+					<w lemma="muy" msd="RQ" pos="R"><choice><orig>mui</orig><reg>muy</reg></choice></w> 
+					<w lemma="breve" msd="AQ0CS0" pos="A"><choice><orig>vrebe</orig><reg>breve</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="porque" msd="CS" pos="C">porque</w> 
+					<w lemma="ya" msd="RG" pos="R">ya</w> 
+					<w lemma="yo" msd="PP1CSN00" pos="P">yo</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w rend="puedo" lemma="poder" msd="VMIP1S0" pos="V"><supplied resp="#CSS" reason="hidden">puedo</supplied></w> <lb break="yes"/> 
+					<w lemma="escribir" msd="VMN0000" pos="V"><choice><orig>escrevir</orig><reg>escribir</reg></choice><note type="linguisticNote" subtype="unstressed_vowels"/></w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vasmds</orig><reg>VMs</reg></choice></w> 
+					<w lemma="por" msd="SPS00" pos="S">por</w> 
+					<w lemma="causa" msd="NCFS000" pos="N">causa</w> 
+					<w rend="qu" lemma="que" msd="CS" pos="C"><choice><orig>qu</orig><reg>que</reg></choice></w> 
+					<w rend="estoy" lemma="estar" msd="VMIP1S0" pos="V"><choice><orig>estoy</orig><reg>estoy</reg></choice></w> 
+					<w lemma="con" msd="SPS00" pos="S">con</w> 
+					<w lemma="mucho" msd="DI0FP0" pos="D">muchas</w> 
+					<w lemma="prisión" msd="NCFP000" pos="N">prisiones</w> <lb break="yes"/> 
+					<w lemma="y" msd="CC" pos="C">y</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="haber" msd="VMIP3S0" pos="V"><choice><orig>ay</orig><reg>hay</reg></choice></w> 
+					<w lemma="mensajero" msd="NCMP000" pos="N">mensajeros</w> 
+					<w lemma="si" msd="CS" pos="C">si</w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="ser" msd="VSIP3S0" pos="V">es</w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="50" msd="Z" pos="Z"><choice><orig>zincuenta</orig><reg>cincuenta</reg></choice></w> 
+					<w lemma="día" msd="NCMP000" pos="N"><choice><orig>dias</orig><reg>días</reg></choice></w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w rend="çincuenta" lemma="50" msd="Z" pos="Z"><choice><orig><supplied resp="#CSS" reason="hidden">çincu<lb break="no"/>enta</supplied></orig><reg>cincuenta</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="y" msd="CC" pos="C"><choice><orig>y</orig><reg>Y</reg></choice></w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="saber" msd="VMSP0S0" pos="V">sepa</w> 
+					<w rend="q" lemma="que" msd="CS" pos="C"><choice><abbr>q</abbr><expan>que</expan></choice></w> 
+					<w lemma="no" msd="RN" pos="R">no</w> 
+					<w lemma="poder" msd="VMIP1S0" pos="V">puedo</w> 
+					<w rend="escrevir" lemma="escribir" msd="VMN0000" pos="V"><choice><orig><supplied resp="#CSS" reason="code">escrevir</supplied></orig><reg>escribir</reg></choice><note type="linguisticNote" subtype="unstressed_vowels"/></w> 
+					<w rend="de" lemma="de" msd="SPS00" pos="S"><supplied resp="#CSS" reason="code">de</supplied></w> 
+					<w rend="otro" lemma="otro" msd="DI0MS0" pos="D"><supplied resp="#CSS" reason="code">otro</supplied></w> 
+					<w rend="modo" lemma="modo" msd="NCMS000" pos="N"><supplied resp="#CSS" reason="code">modo</supplied></w> 
+					<w rend="por" lemma="por" msd="SPS00" pos="S"><supplied resp="#CSS" reason="hidden">por</supplied></w> <lb break="yes"/> 
+					<w rend="lo" lemma="el" msd="DA0NS0" pos="D"><supplied resp="#CSS" reason="code">lo</supplied></w> 
+					<w lemma="que" msd="PR0CN000" pos="P">que</w> 
+					<w rend="costa" lemma="costar" msd="VMIP3S0" pos="V"><choice><orig><supplied resp="#CSS" reason="code">costa</supplied></orig><reg>cuesta</reg></choice><note type="linguisticNote" subtype="verb_paradigm"/></w> 
+					<w rend="aca" lemma="acá" msd="RG" pos="R"><choice><orig><supplied resp="#CSS" reason="code">aca</supplied></orig><reg>acá</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w rend="porque" lemma="porque" msd="CS" pos="C"><supplied resp="#CSS" reason="code">porque</supplied></w> 
+					<w rend="me" lemma="me" msd="PP1CS000" pos="P"><supplied resp="#CSS" reason="code">me</supplied></w> 
+					<w rend="leen" lemma="leer" msd="VMIP3P0" pos="V"><supplied resp="#CSS" reason="code">leen</supplied></w> 
+					<w rend="las" lemma="el" msd="DA0FP0" pos="D"><supplied resp="#CSS" reason="code">las</supplied></w> 
+					<w rend="cartas" lemma="carta" msd="NCFP000" pos="N"><supplied resp="#CSS" reason="code">cartas</supplied></w> 
+					<w rend="como" lemma="como" msd="CS" pos="C"><supplied resp="#CSS" reason="code">como</supplied></w> 
+					<w rend="no" lemma="no" msd="RN" pos="R"><supplied resp="#CSS" reason="code">no</supplied></w> 
+					<w rend="las" lemma="lo" msd="PP3FPA00" pos="P"><supplied resp="#CSS" reason="code"><supplied resp="#CSS" reason="hidden">las</supplied></supplied></w> <lb break="yes"/> 
+					<w rend="puedo" lemma="poder" msd="VMIP1S0" pos="V"><supplied resp="#CSS" reason="code">puedo</supplied></w> 
+					<w rend="dar" lemma="dar" msd="VMN0000" pos="V"><supplied resp="#CSS" reason="code">dar</supplied></w> 
+					<w lemma="ni" msd="CCN" pos="C">ni</w> 
+					<w rend="tomar" lemma="tomar" msd="VMN0000" pos="V"><supplied resp="#CSS" reason="code">tomar</supplied></w> 
+					<w rend="si" lemma="si" msd="CS" pos="C"><supplied resp="#CSS" reason="code">si</supplied></w> 
+					<w rend="no" lemma="no" msd="RN" pos="R"><supplied resp="#CSS" reason="code">no</supplied></w> 
+					<w lemma="ser" msd="VSIP3S0" pos="V">es</w> 
+					<w lemma="por" msd="SPS00" pos="S">por</w> 
+					<w rend="mano" lemma="mano" msd="NCFS000" pos="N"><supplied resp="#CSS" reason="code">mano</supplied></w> 
+					<w rend="de" lemma="de" msd="SPS00" pos="S"><supplied resp="#CSS" reason="code">de</supplied></w> 
+					<w rend="mis" lemma="mi" msd="DP1CPS" pos="D"><supplied resp="#CSS" reason="code">mis</supplied></w> 
+					<w rend="contrarios" lemma="contrario" msd="NCMP000" pos="N"><supplied resp="#CSS" reason="code"><supplied resp="#CSS" reason="hidden">contrarios</supplied></supplied></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s>
+			</p><lb break="yes"/>
+			</postscript>
+			<postscript>
+			<p>
+				<s><lb break="yes"/> <del hand="#PLC1">
+					<w><choice><orig>y</orig><reg/></choice></w></del> 
+					<w rend="si"><choice><orig><del hand="#PLC1">si</del></orig><reg/></choice></w> 
+					<w rend="va"><choice><orig><del hand="#PLC1">va</del></orig><reg/></choice></w> 
+					<w rend="md"><choice><orig><del hand="#PLC1">md</del></orig><reg/></choice></w> 
+					<w rend="no"><choice><orig><del hand="#PLC1">no</del></orig><reg/></choice></w> 
+					<w rend="vi"><choice><orig><del hand="#PLC1">vi</del></orig><reg/></choice></w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w> 
+					<w lemma="hacer" msd="VMSP0S0" pos="V"><choice><orig>aga</orig><reg>haga</reg></choice></w> 
+					<w lemma="uno" msd="DI0MS0" pos="D">un</w> 
+					<w lemma="aviso" msd="NCMS000" pos="N">aviso</w> 
+					<w lemma="que" msd="PR0CN000" pos="P">que</w> 
+					<w lemma="mi" msd="DP1CSS" pos="D">mi</w> 
+					<w lemma="hermano" msd="NCMS000" pos="N"><choice><orig>ermano</orig><reg>hermano</reg></choice></w> 
+					<w lemma="decir" msd="VMIF3S0" pos="V"><choice><orig>dira</orig><reg>dirá</reg></choice></w> 
+					<w lemma="a" msd="SPS00" pos="S">a</w> 
+					<w lemma="VM" msd="NP00000" pos="N"><choice><orig>vamd</orig><reg>VM</reg></choice></w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="porque" msd="CS" pos="C">porque</w> 
+					<w rend="me" lemma="me" msd="PP1CS000" pos="P"><supplied resp="#CSS" reason="hidden">me</supplied></w> <lb break="yes"/> 
+					<w lemma="ir" msd="VMIP3S0" pos="V">va</w> 
+					<w lemma="el" msd="DA0FS0" pos="D">la</w> 
+					<w lemma="vida" msd="NCFS000" pos="N">vida</w> 
+					<w lemma="en" msd="SPS00" pos="S">en</w> 
+					<w lemma="ello" msd="PD0NN000" pos="P">ello</w> 
+					<w lemma="porque" msd="CS" pos="C">porque</w> 
+					<w lemma="yo" msd="PP1CSN00" pos="P">yo</w> 
+					<w lemma="salir" msd="VMSP0S0" pos="V">salga</w> 
+					<w lemma="con" msd="SPS00" pos="S">con</w> 
+					<w lemma="mi" msd="DP1CSS" pos="D">mi</w> 
+					<w lemma="honra" msd="NCFS000" pos="N"><choice><orig>onRa</orig><reg>honra</reg></choice></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s> 
+				<s>
+					<w lemma="por" msd="SPS00" pos="S"><choice><orig>por</orig><reg>Por</reg></choice></w> 
+					<w rend="eso" lemma="eso" msd="PD0NN000" pos="P"><supplied resp="#CSS" reason="hidden">eso</supplied></w> <lb break="yes"/> 
+					<w lemma="ir" msd="VMIP3S0" pos="V">va</w> 
+					<w lemma="escribir" msd="VMP00SM" pos="V">escrito</w> 
+					<w lemma="de" msd="SPS00" pos="S">de</w> 
+					<w lemma="otro" msd="DI0FS0" pos="D">otra</w> 
+					<w lemma="letra" msd="NCFS000" pos="N">letra</w>
+					<pc pos="F" msd="Fc"><choice><orig/><reg>,</reg></choice></pc> 
+					<w lemma="como" msd="PA000000" pos="P">como</w> 
+					<w lemma="ese" msd="PD0FS000" pos="P"><choice><orig>esa</orig><reg>ésa</reg></choice></w> 
+					<w lemma="que" msd="CS" pos="C">que</w> 
+					<w lemma="ir" msd="VMIP3S0" pos="V">va</w> 
+					<w lemma="arriba" msd="RG" pos="R"><choice><orig>aRiva</orig><reg>arriba</reg></choice></w> 
+					<w rend="escrita" lemma="escribir" msd="VMP00SF" pos="V"><supplied resp="#CSS" reason="hidden">escrita</supplied></w>
+					<pc pos="F" msd="Fp"><choice><orig/><reg>.</reg></choice></pc>
+				</s>
+			</p><lb break="yes"/>
+			</postscript>
+		</body>
+	</text>
+</TEI>
+

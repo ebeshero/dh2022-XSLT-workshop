@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_all_ja_430.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>漱石筆鏡子宛て書簡</title>
+                <author>夏目漱石</author>
+                <respStmt>
+                    <name>あなたの名前</name>
+                    <resp>TEI符号化</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>第一版</edition>
+            </editionStmt>
+            <extent>2ページ</extent>
+            <publicationStmt>
+                <publisher>一般財団法人人文情報学研究所</publisher>
+                <distributor>今回の会合名</distributor>
+                <authority>あなたの名前</authority>
+                <pubPlace>
+                    <address>
+                        <orgName>一般財団法人人文情報学研究所</orgName>
+                        <street>文京区本郷5-26-4</street>
+                        <settlement>東京都</settlement>
+                        <postCode>113-0033</postCode>
+                    </address>
+                </pubPlace>
+                <date when="2022-07-25">令和四年七月二十五日</date>
+                <idno>ID_of_this_file</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        クリエイティブ・コモンズ　表示 - 継承 4.0 国際 (CC BY-SA 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <notesStmt>
+                <note>TEI演習のために翻刻された</note>
+            </notesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>
+                            <orgName>東北大学附属図書館</orgName>
+                            <settlement>宮城県仙台市</settlement>
+                        </institution>
+                        <collection>夏目漱石家族文書</collection>
+                        <collection>漱石文庫データベース（2020年再撮影）</collection>
+                        <idno>sk00000771</idno>
+                        <idno type="URI">
+                            https://www.i-repository.net/il/meta_pub/G0000398tuldc_sk00000771 </idno>
+                        <msName>漱石筆鏡子宛て書簡</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang>近代日本語の漢字仮名交じり文で書かれている。</textLang>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <handNote scope="sole">やや崩した字で書かれている。</handNote>
+                        </handDesc>
+                        <bindingDesc>
+                            <condition> 1枚紙の両面に書かれている。 この書簡が入れられていた封筒も保存されている。 </condition>
+                        </bindingDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>TEIガイドラインによる符号化を学ぶための演習</p>
+            </projectDesc>
+            <editorialDecl>
+                <correction>
+                    <p>誤記と思われる文字列は<gi>sic</gi>を付与し、 <gi>choice</gi>と<gi>corr</gi>で訂正を記した</p>
+                </correction>
+                <normalization>
+                    <p>漢字・ひらがな・カタカタ・合略仮名については Unicode14.0の範囲で可能な限り元の表記に沿って記述した。
+                        変体仮名は使用していない。なお、合略仮名に関しては、 <gi>choice</gi>と<gi>reg</gi>で対応するカタカナも示した。 </p>
+                </normalization>
+                <punctuation>
+                    <p>元資料には句点は存在しないが、 翻刻者の判断により追加された。</p>
+                </punctuation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName>夏目漱石</persName>
+                    <date when="1900-09-27">九月二十七日</date>
+                    <location>
+                        <placeName>ペナン</placeName>
+                        <geo>5.418799642029674 100.345223003859</geo>
+                    </location>
+                </correspAction>
+                <correspAction type="received">
+                    <persName>夏目鏡子</persName>
+                    <location>
+                        <geo>35.70348307829794 139.73306153078642</geo>
+                        <address>
+                            <country>日本</country>
+                            <region>東京</region>
+                            <settlement>牛込區</settlement>
+                            <street>矢来町三番地中ノ丸丙八十五号</street>
+                        </address>
+                    </location>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="ja">日本語（明治時代）</language>
+            </langUsage>
+            <textClass>
+                <classCode scheme="http://jla.or.jp/data/ndc9"> 915.6 </classCode>
+                <keywords>
+                    <term>日本文学</term>
+                    <term>書簡</term>
+                    <term>近代：明治以後</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2022-07-25">
+                <persName>あなたの名前</persName>によるヘッダの改良
+            </change>
+            <change when="2022-01-31">
+                <persName>永崎研宣</persName>による<title>漱石筆鏡子宛て書簡</title>のデジタル翻刻
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <text type="letter">
+        <body>
+            <pb n="1"/>
+            <div>
+                <p>今日ハ<date when="1900-09-27"
+                    >九月二十七日</date>ニテ吾等が乗レル船ハ昧爽英領「<placeName corresp="#ペナン">ペナン</placeName>」ト申ス港ニ着
+                    <lb/>キ申候。未明ヨリノ小雨ニ加フルニ出帆時刻ハ午前九時ナレバ遺憾ナガラ上陸ヲ
+                        <lb/>得ズ。<placeName corresp="#上海">上海</placeName>ニテハ日本旅館ニ宿泊シ<placeName corresp="#香港">香港</placeName> ニテモ同 <choice>
+                        <sic>朋</sic>
+                        <corr>胞</corr>
+                    </choice> ノ營業ニ関る宿屋ニテ <lb/>
+                        日本飯の食納ヲナシ候。<placeName corresp="#上海">上海</placeName>モ<placeName corresp="#香港">香港</placeName>モ宏大ニテ立派ナル<choice>
+                        <orig>ヿ</orig>
+                        <reg>コト</reg>
+                    </choice>ハ到底<placeName corresp="#横浜">横濱</placeName><placeName corresp="#神戸">神戸</placeName>ノ
+                        <lb/>比ニハ無之特に<placeName corresp="#香港">香港</placeName>ノ夜景抔ハ満山ニ<add place="right">夜光ノ</add>寶石ヲ無数に<choice>
+                        <sic>縷</sic>
+                        <corr>鏤</corr>
+                    </choice>メタルガ如クニ候。 <lb/>又「ピーク」トテ山ノ絶頂迄鉄道車ノ便ヲ假リテ六七<add place="right"
+                    >十</add>度ノ峻坂ヲ上リテ四方ヲ <lb/>見渡セバ其景色ノ佳ナル<choice>
+                        <orig>ヿ</orig>
+                        <reg>コト</reg>
+                    </choice>実に愉快に候。「<placeName corresp="#シンガポール">シンガポア</placeName>」ニモ上陸シ馬車ヲ假
+                        <lb/>リテ<placeName>植物園</placeName><placeName>博物館</placeName>及市街を一見致候。茲ニモ日本の旅館アリテ<add
+                        place="right">午</add>食ヲ認メ <lb/> 候。此地ノ日本人ノ多数ハ醜業婦 <subst>
+                        <del>ノ如く</del>
+                        <add place="right">ニテ</add>
+                    </subst> 印度ノ 腰巻ニ綿チリメンノ羽織ニ一種 <lb/>特別ナ下駄抔ヲ穿キテ街上ヲ散歩致候。一種奇天烈ノ感ヲ起サシメ候。
+                    <lb/>熱帯地方ノ植物ハ名前ノミヲ承知致候ガ来テ見レバ今更ノ如ク其青々ト <lb/>繁茂セル様ニ驚カレ候。熱帯地方ト申セバ太陽直下ノ光線ニテ身体モ
+                    <lb/>焦ゲル位ノ熱サト想像致候処実際ハ豈計ランヤデ却ツテ日本ノ <lb/>夏ヨリモ涼シキ位ニ候。但春夏秋冬ニ寒暖ノ区別ナキノミト御承知可被
+                    <lb/>下候。此ノ辺ニテ見ル印度人ハ佛画ニ見ル阿羅漢丸出シニテ其服装顔色遙 <lb/>カニ日本人ヨリハ雅ニ御座候。色ノ尤モ黒キハ紫檀位ニテ且其光沢ノ美
+                    <lb/>ナル <choice>
+                        <orig>ヿ</orig>
+                        <reg>コト</reg>
+                    </choice> モ殆ンド紫檀に彷彿タル者之アリ候。「<placeName corresp="#シンガポール">シンガポア</placeName>」ニテハ碇泊中舩ノ <lb/><add
+                        place="right">周</add>囲ニ幾十艘ノ丸木舟ヲ漕ギ寄セテ口々ニ分ラヌ<choice>
+                        <orig>ヿ</orig>
+                        <reg>コト</reg>
+                    </choice>ヲワメキ候様面白ク候。是ハ <lb/>舩客ヨリ銀貨銅貨ヲ海中ニ投ゲロト申ス訳ニテ甲板上ヨリ慰半分ニ <lb/>投ゲル<del>・</del>貨幣ヲ海中ニモグリテ取リテ上ガルニ百ニ一モ過タズ感心な<choice>
+                        <orig>ヿ</orig>
+                        <reg>コト</reg>
+                    </choice>ニ候。 </p>
+                <p>
+                    <lb/>皆御変リナキ<choice>
+                        <orig>ヿ</orig>
+                        <reg>コト</reg>
+                    </choice>ト存候<rs corresp="#夏目鏡子">其許</rs>モ<persName corresp="#松岡筆子">筆</persName>モ達者ト存候月々ノ俸給ハ固ヨリ些少ナレ <lb/><choice>
+                        <orig>𪜈</orig>
+                        <reg>トモ</reg>
+                    </choice><del>・</del>モシ餘アラバ幾分ニテモ家賃トシテ御納可被成候。夏目ヘハ事情ヲ善ク <lb/>申シ遣ハシ候間都合次第ニテヨロシク候。 </p>
+                <p>
+                    <lb/><rs corresp="#夏目漱石">小生</rs>ノ着物羽織等ハ 留守中 <choice>
+                        <sic>ノ</sic>
+                        <corr resp="担当者1"/>
+                        <corr resp="担当者2">ニ</corr>
+                    </choice> 寸法ノ合ウ様 縫直シ可被成候。 </p>
+                <p>
+                    <lb/><rs corresp="#夏目鏡子">其許</rs>ハ齒ヲ抜キテ入齒ヲナサルベク候只今ノ儘ニテハ餘リ見苦ク候。 </p>
+                <p>
+                    <lb/>頭ノハゲルノモ毎々申通一種ノ病気ニ違ナク候必ズ医者ニ見テ御貰可<add place="right">被</add>成候。 <lb/>人ノ言フ<choice>
+                        <orig>ヿ</orig>
+                        <reg>コト</reg>
+                    </choice>ヲ善ヒ加減ニ聞テハイケマセン。 </p>
+                <p>
+                    <pb n="2"/>
+                    <lb/>食物ノ急ニ変化シタルト気候アツキト運動不足ト舩ノキラヒナトガ合併 <lb/>シテ消化機能兎角働キ方面白カラズ目ハ餘程クボミ申候。其割ニ身体
+                    <lb/>ハサノミヤセ不申候。 </p>
+                <p>之手紙ハ<placeName corresp="#コロンボ">コロンボ</placeName>ト申ス処ニ着キテヨリ出スベケレバ日本ニハ三週間位 <lb/>ノ後に達スベシト存候。</p>
+            </div>
+            <closer><lb/>
+                <signed><persName corresp="#夏目漱石">金之助</persName></signed>
+                <lb/>
+                <salute><persName corresp="#夏目鏡子">鏡</persName>どの</salute></closer>
+        </body>
+        <back>
+            <listPerson>
+                <person xml:id="夏目漱石">
+                    <persName type="本名"><surname>夏目</surname>
+                        <forename>金之助</forename>
+                    </persName>
+                    <persName type="ペンネーム"><surname>夏目</surname>
+                        <forename>漱石</forename>
+                    </persName>
+                    <birth when="1867-02-09">慶応3年1月5日</birth>
+                    <death when="1916-12-09">大正5年12月9日</death>
+                    <idno type="VIAF">https://viaf.org/viaf/56614190/</idno>
+                </person>
+                <person xml:id="夏目鏡子">
+                    <persName type="旧名"><surname>中根</surname>
+                        <forename>鏡子</forename>
+                    </persName>
+                    <persName type="本名"><surname>夏目</surname>
+                        <forename>鏡子</forename>
+                    </persName>
+                    <birth when="1877-07-21">明治10年7月21日</birth>
+                    <death when="1963-04-18">昭和38年4月18日</death>
+                    <idno type="VIAF">https://viaf.org/viaf/58810142/</idno>
+                </person>
+                <person xml:id="松岡筆子">
+                    <persName type="旧名"><surname>夏目</surname>
+                        <forename>筆子</forename></persName>
+                    <persName type="本名"><surname>松岡</surname>
+                        <forename>筆子</forename>
+                    </persName>
+                    <birth when="1899-05-31">明治32年5月31日</birth>
+                    <death when="1989-07-07">平成元年7月7日</death>
+                </person>
+            </listPerson>
+            <listPlace>
+                <place xml:id="ペナン">
+                    <placeName>ペナン</placeName>
+                </place>
+                <place xml:id="上海">
+                    <placeName>上海</placeName>
+                </place>
+                <place xml:id="香港">
+                    <placeName>香港</placeName>
+                </place>
+                <place xml:id="横浜">
+                    <placeName>横浜</placeName>
+                </place>
+                <place xml:id="コロンボ">
+                    <placeName>コロンボ</placeName>
+                </place>
+                <place xml:id="シンガポール">
+                    <placeName>シンガポール</placeName>
+                </place>
+                <place xml:id="神戸">
+                    <placeName>神戸</placeName>
+                </place>
+            </listPlace>
+        </back>
+    </text>
+</TEI>
