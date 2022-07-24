@@ -14,6 +14,8 @@ Knowing how to navigate and explore data in your encoding can be an important wa
 We will be working with the oXygen XML Editor in this workshop, which you should [install on your computer from here](https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html) or update to the latest version if you already have it. If you are installing oXygen for the first time, note that oXygen comes with Author, Editor, and Developer versions. We will be using the Editor version in this workshop. oXygen comes with a free 30-day trial license key. 
 
 ### Outline
+Please feel free to interrupt us vocally with questions and/or use the Chat feature in Zoom to raise questions. We will monitor the chat carefully. 
+
 #### Part 1: Document Analysis: Review and refresh understanding of TEI XML tree structures
 * Basic TEI structure
 * working with XML and TEI projects in multiple languages 
