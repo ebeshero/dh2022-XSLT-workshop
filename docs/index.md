@@ -14,15 +14,24 @@ Knowing how to navigate and explore data in your encoding can be an important wa
 We will be working with the oXygen XML Editor in this workshop, which you should [install on your computer from here](https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html) or update to the latest version if you already have it. If you are installing oXygen for the first time, note that oXygen comes with Author, Editor, and Developer versions. We will be using the Editor version in this workshop. oXygen comes with a free 30-day trial license key. 
 
 ### Outline
-#### Part 1: Review and refresh understanding of XML tree structures
+#### Part 1: Document Analysis: Review and refresh understanding of TEI XML tree structures
+* Basic TEI structure
 * working with XML and TEI projects in multiple languages 
-* review / crash course in HTML and CSV/TSV
+  * German
+  * English 
+  * Japanese 
+  * Spanish 
+
 
 #### [Part 2: Orientation to XPath](xpath.md)
 * working with project files to retrieve data with XPath in preparation for writing XSLT
 
 #### [Part 3: Teach basic XSLT](xslt.md)
 to produce simple outputs that curate data and show how these can be used in simple charts and graphs.
+* Letter publication to HTML
+* Letter to HTML Table
+* Text 
+* SVG 
 
-### Google Docs Agenda
-Detailed agenda / live note-taking during the workshop: <https://bit.ly/dh2022-XSLT>
+### Google Docs Notes (Instructor Preparation)
+<https://bit.ly/dh2022-XSLT>
