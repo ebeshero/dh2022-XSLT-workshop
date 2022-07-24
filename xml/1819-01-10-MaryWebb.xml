@@ -36,8 +36,8 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
          </editionStmt>
          <publicationStmt>
             <authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
-            <pubPlace>Greensburg, PA, USA</pubPlace>
-            <date>2013</date>
+            <pubPlace>digitalmitford.org</pubPlace>
+            <date>2015</date>
             <availability>
                <p>Reproduced by courtesy of the <orgName ref="#ReadingCL">Reading Central Library</orgName>.</p> 
                <licence>Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported
@@ -85,11 +85,25 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
            </editorialDecl>
      </encodingDesc>
      <profileDesc>
-        
+        <correspDesc>
+           <correspAction type="sent">
+              <persName ref="#MRM">Mary Russell Mitford</persName>
+              <location type="origin">
+                 <placeName ref="#Bertram_house">Bertram House, Grazeley, Berkshire, England</placeName>
+                 <geo></geo>
+              </location>
+              <date when="1819-01-10"/>
+           </correspAction>
+           <correspAction type="received">
+              <persName ref="#Webb_Mary_younger">Mary Webb</persName>
+              <location type="destination">
+                 <placeName>unknown</placeName>
+              </location>
+           </correspAction>
+        </correspDesc>
      </profileDesc>
      <revisionDesc>
-        <change when="2022-07-24" who="#ebb">Updated teiHeader to provide current sponsor info and a correspDesc, and to remove quotes in encodingDesc.</change>
-       
+        <change when="2022-07-24" who="#ebb">Updated teiHeader to provide current sponsor info and a correspDesc, and to remove quotes in encodingDesc. Also added two new bibl entries to back list to add to the Site Index, and a new pointer to them in the letter for an essay by Charles Lamb.</change>
      </revisionDesc>
   </teiHeader>
   <text>
