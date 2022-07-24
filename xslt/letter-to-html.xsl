@@ -30,8 +30,16 @@
     
     <xsl:template match="p | opener | closer">
         <p>
-            <xsl:apply-templates />
+            <xsl:apply-templates/>
         </p>
+    </xsl:template>
+    
+    <xsl:template match="s">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="w | pc">
+        <xsl:apply-templates select="normalize-space(text())"/>
     </xsl:template>
     
     <xsl:template match="persName">

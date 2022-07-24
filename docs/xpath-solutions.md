@@ -12,7 +12,6 @@ XPath is a syntax used in XSLT, XQuery, and other programming languages to navig
     - Different styles of writing these expressions: nesting (XPath 2) vs. **simple-map**: `!` and arrow operator: `=>` (XPath 3)
         - `//*/normalize-space()` (XPath 2) vs. `//* ! normalize-space()` (XPath 3) mean the same thing.
         - `text()` node vs. `//string()` and a "deep" discussion of what `normalize-space()`
-        - Basic math and arithmetic operations
 
 
 # Workshop XPath expressions 
@@ -25,7 +24,17 @@ XPath is a syntax used in XSLT, XQuery, and other programming languages to navig
 - What XPath will find all the person names encoded in the letter? How many of these are there?
 
 ## For letters with parts of speech encoded
-Write XPath expressions to isolate different parts of speech, working carefully with predicate expressions. 
+- Write XPath expressions to isolate different parts of speech, working carefully with predicate expressions. 
+
+The following questions only apply to the Spanish example:
 - What XPath will find all the nouns (pos='N')?
+
 - How many of these are there? 
+
 - What XPath will find all the nouns which are directly preceded by a determiner (pos='D')?
+This one is very challenging and the order of the predicate expressions matters!
+Our solution is `//w[@pos="N" and preceding-sibling::w[1][@pos='D']]`
+
+Try looking at `//w[@pos="N" and preceding-sibling::w[@pos='D'][1]]`. 
+Try This expression returns *too many results*. 
+Try Can you see why? 

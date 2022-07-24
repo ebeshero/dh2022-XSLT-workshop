@@ -25,7 +25,14 @@
                         <th>Place</th>
                         <th>Date</th>
                     </tr>
-                    <xsl:for-each select="$letters//correspDesc">
+                    
+               <xsl:apply-templates select="$letters//correspDesc"/>
+             
+                    <!-- ebb: This way works as well! It's another alternative. 
+                 Pull-processing relies on the use of the @select attribute to "prune" the source XML tree and process
+                 only what we wish to pull from it. 
+                 
+                 <xsl:for-each select="$letters//correspDesc">
                         <tr>
                             <td>
                                 <xsl:value-of select="correspAction[@type='received']/persName" />
@@ -40,10 +47,27 @@
                                 <xsl:value-of select="correspAction[@type='sent']/date/@when" />
                             </td>
                         </tr>
-                    </xsl:for-each>
+                    </xsl:for-each>-->
                 </table>
             </body>
         </html>
+    </xsl:template>
+    
+   <xsl:template match="correspDesc">
+        <tr>
+            <td>
+                <xsl:value-of select="correspAction[@type='received']/persName" />
+            </td>
+            <td>
+                <xsl:value-of select="correspAction[@type='sent']/persName" />
+            </td>
+            <td>
+                <xsl:value-of select="correspAction[@type='sent']//placeName" />
+            </td>
+            <td>
+                <xsl:value-of select="correspAction[@type='sent']/date/@when" />
+            </td>
+        </tr>
     </xsl:template>
     
 </xsl:stylesheet>
