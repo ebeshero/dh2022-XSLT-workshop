@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000  2800">
+   <g transform="translate(10, 2100)">
+      <line x1="0"
+            y1="0"
+            x2="2000"
+            y2="0"
+            stroke="black"
+            stroke-width="4"/>
+      <line x1="0"
+            y1="0"
+            x2="0"
+            y2="-1750"
+            stroke="black"
+            stroke-width="4"/>
+   </g>
+</svg>
