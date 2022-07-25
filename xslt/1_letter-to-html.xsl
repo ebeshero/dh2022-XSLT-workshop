@@ -20,8 +20,8 @@
     
     <xsl:template match="/">
        <xsl:for-each select="$letters"> 
-           <xsl:variable name="filename" as="xs:string" select="base-uri() ! tokenize(., '/')[last()]"/>
-           <xsl:result-document method="xhtml" html-version="5" indent="yes" href="../output/html-letters/{$filename}">
+           <xsl:variable name="filename" as="xs:string" select="base-uri() ! tokenize(., '/')[last()] ! substring-before(., '.xml')"/>
+           <xsl:result-document method="xhtml" html-version="5" indent="yes" href="../output/html-letters/{$filename}.html">
            <!-- ebb: In the lines above, we create an xsl:for-each statement that looks at 
            each file in the XML letters colection in turn. We set a variable that returns its filename, and 
            then we use that in xsl:result-document, which outputs a new HTML file in the folder we designate.
@@ -32,6 +32,18 @@
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
             </head>
             <body>
+                <!-- ebb: Here we pull data from the correspDesc to represent at the top of the HTML page.-->
+                <section id="correspDesc">
+                    <h2>Correspondence information</h2>
+                    <ul>
+                        <li>Sent by <xsl:apply-templates select="//correspAction[@type='sent']//persName"/>, from <xsl:apply-templates select="//correspAction[@type='sent']//location/placeName"/> on <xsl:apply-templates select="//correspAction[@type='sent']//date/@when"/></li>
+                        <li>Received by: 
+                            <xsl:apply-templates select="//correspAction[@type='received']//persName"/>
+                            <xsl:if test="//correspAction[@type='received']//placeName"> at <xsl:apply-templates select="//correspAction[@type='received']//placeName"/></xsl:if></li>
+                    </ul>
+                </section>
+                
+              <!--Here we begin to "push process" the letter contents: -->  
                 <section id="letter">
                     <xsl:apply-templates select="//text/body"/>
                 </section>
@@ -52,29 +64,32 @@
             <xsl:apply-templates/>
         </p>
     </xsl:template>
+
     
-    <xsl:template match="s">
-        <xsl:apply-templates/>
-    </xsl:template>
-    
-    <xsl:template match="w | pc">
-        <xsl:apply-templates select="text() ! normalize-space()"/>
-    </xsl:template>
-    
-    <xsl:template match="*[@ref] | *[@corresp]">
+    <xsl:template match="*[@ref] | *[@corresp] | w[@pos='N']">
         <em style="color:red;">
             <xsl:apply-templates />
         </em>
+    </xsl:template>
+    
+    <xsl:template match="w[@pos='D'][following-sibling::w[1][@pos='N']]">
+        <em style="color:blue;"><xsl:apply-templates/></em>
     </xsl:template>
     
     <xsl:template match="lb">
         <br/>
     </xsl:template>
     
+    <xsl:template match="figure"/>
     <xsl:template match="note" />
-    <xsl:template match="choice | orig | reg" />
+    <!--ebb: The two templates above are suppressing elements from being output. -->
     
-   <xsl:template match="text()">
+    <xsl:template match="choice">
+       <xsl:apply-templates select="orig | abbr"/>
+    </xsl:template>
+    
+    
+   <xsl:template match="TEI[@xml:lang='ja']//text()">
         <xsl:value-of select="normalize-space(.)"/>
     </xsl:template>
     <!-- kn ebb ms: This template is necessary for proper space-handling of Japanese text output. 
