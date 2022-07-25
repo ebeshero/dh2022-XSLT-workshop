@@ -21,7 +21,7 @@
     <!--We modify the XML collection variable here in order to select only the files that have encoded persName elements. -->
     <xsl:variable name="personLetters" as="document-node()+" select="collection('../xml/?select=*.xml')[descendant::persName]"/> 
     
-    <!-- Create an xSpacer and ySpacer variable just for scaling the plot. We typically want values in the hundreds or thousands. -->
+    <!-- Create xSpacer and ySpacer variables just for scaling the plot. We typically want values in the hundreds or thousands. -->
     <xsl:variable name="xSpacer" as="xs:integer" select="500"/>
     <xsl:variable name="ySpacer" as="xs:integer" select="-5"/>
     
