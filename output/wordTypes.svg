@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300"> &gt;
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500"> &gt;
             
-            <g transform="translate(20, 200)">
+            <g transform="translate(50, 300)">
       <line id="x-Axis"
             x1="0"
             y1="0"
             x2="450"
+            y2="0"
             stroke="black"
-            stroke-width="5"/>
+            stroke-width="2"/>
+      <line id="y-Axis"
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="-250"
+            stroke="black"
+            stroke-width="2"/>
+      <text class="y-hash" x="-30" y="-245">50%</text>
+      <text id="title" x="100" y="-270">Proportions of Word Types in the Spanish Letter</text>
       <!--
             Wordcount: 515 
             Types of words: 9
