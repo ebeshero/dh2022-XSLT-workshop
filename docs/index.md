@@ -13,6 +13,13 @@ Knowing how to navigate and explore data in your encoding can be an important wa
 ### Preparation
 We will be working with the oXygen XML Editor in this workshop, which you should [install on your computer from here](https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html) or update to the latest version if you already have it. If you are installing oXygen for the first time, note that oXygen comes with Author, Editor, and Developer versions. We will be using the Editor version in this workshop. oXygen comes with a free 30-day trial license key. 
 
+### Accessing workshop files:
+
+* Download this zipped directory to your computer and unzip to access the files:
+https://drive.google.com/file/d/1U7iIzxMQZRPn4M0n_hdVs_30AQ61XWiA/view?usp=sharing 
+
+* Alternatively, if you know you're way with GitHub, simply clone our repository at <https://github.com/ebeshero/dh2022-XSLT-workshop/>
+
 ### Outline
 Please feel free to interrupt us vocally with questions and/or use the Chat feature in Zoom to raise questions. We will monitor the chat carefully. 
 
