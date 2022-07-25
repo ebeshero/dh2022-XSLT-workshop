@@ -8,10 +8,21 @@ XSLT takes a different approach! It is declarative, which means that you declare
 ## How to organize the oXygen XML Editor to write XSLT 
 Two ways
 * XSLT Transformation Scenario
+    * Start from your XML file
+    * Click the icon 'configure transformation scenario'
+    * New > XML transformation with XSLT
+    * Assign a name to the scenario
+    * In the tab 'XSLT' select the XSLT file that you want to use for the transformation
+    * Change to the tab 'Output' and save your file as e.g. 'something.html'
+    * Select the checkbox 'open in browser' and 'open in editor'
+    * Click 'ok' and 'apply'
+    * If you want to reuse your saved transformation scenario, you only need to click on the button 'apply transformation scenario' (red arrow)
 
 * XSLT Debugger View (without output stack tracing) 
 
 * Choosing the Saxon parser (Saxon PE)
+
+* Start a new project
 
 
 ## How to prepare oXygen XML Editor to write XSLT over TEI
