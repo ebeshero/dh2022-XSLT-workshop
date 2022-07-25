@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="de">
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Leo Spitzer an Hugo Schuchardt (400-11155)</title>
+        <author ana="marcrelator:aut">
+          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
+            <forename>Leo</forename>
+            <surname>Spitzer</surname>
+          </persName>
+        </author>
+        <editor ana="marcrelator:edt">
+          <persName>
+            <forename>Bernhard</forename>
+            <surname>Hurch</surname>
+          </persName>
+        </editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher ana="marcrelator:pbl">
+          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
+                  Karl-Franzens-Universität Graz</orgName>
+        </publisher>
+        <authority ana="marcrelator:his">
+          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
+                  Informationsmodellierung - Austrian Centre for Digital Humanities,
+                  Karl-Franzens-Universität Graz</orgName>
+        </authority>
+        <distributor ana="marcrelator:rps">
+          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
+                  Asset Management System</orgName>
+        </distributor>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
+                  BY-NC 4.0</licence>
+        </availability>
+        <date ana="dcterms:issued" when="2022">2022</date>
+        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
+        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2246" type="PID">o:hsa.letter.2246</idno>
+        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">400-11155</idno>
+      </publicationStmt>
+      <seriesStmt>
+        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
+        <respStmt ana="marcrelator:pbl">
+          <resp>Herausgeber</resp>
+          <persName ref="http://d-nb.info/gnd/111679893">
+            <forename>Bernhard</forename>
+            <surname>Hurch</surname>
+            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
+          </persName>
+        </respStmt>
+      </seriesStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <country>Österreich</country>
+            <region>Steiermark</region>
+            <settlement>Graz</settlement>
+            <institution>Karl-Franzens-Universität Graz</institution>
+            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
+            <idno type="shelfmark">11155</idno>
+          </msIdentifier>
+          <msContents>
+            <textLang mainLang="de"/>
+            <msItem>
+              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
+                <forename>Leo</forename>
+                <surname>Spitzer</surname>
+              </author>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>
+                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
+                  <objectType>Brief</objectType>
+                </support>
+                <extent>
+                  <measure quantity="4" unit="pages">4 Seiten</measure>
+                </extent>
+              </supportDesc>
+            </objectDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.59" ref="http://sws.geonames.org/2768497">Pörtschach</origPlace>
+              <origDate ana="dcterms:created" when="1924-09-07">07.09.1924.</origDate>
+            </origin>
+            <provenance>
+                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
+                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
+                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
+                  </provenance>
+          </history>
+        </msDesc>
+        <bibl type="print">
+          <author>
+            <persName>
+              <forename>Bernhard</forename>
+              <surname>Hurch</surname>
+            </persName>
+          </author>
+          <date when="2006">2006</date>
+          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
+          <pubPlace>Berlin</pubPlace>
+          <publisher>Walter de Gruyter</publisher>
+        </bibl>
+        <bibl type="online">
+          <author ana="marcrelator:aut">
+            <persName>
+              <forename>Bernhard</forename>
+              <surname>Hurch</surname>
+            </persName>
+          </author>
+          <date when="2014">2014</date>
+          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
+          <series>
+            <title>Hugo Schuchardt Archiv</title>
+            <editor>
+              <forename>Bernhard</forename>
+              <surname>Hurch</surname>
+            </editor>
+          </series>
+          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>Die Datenmodellierung orientiert sich am <ref
+            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
+               <ref
+            target="https://www.ediarum.org/">ediarum</ref> und der
+               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
+        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
+        </p>
+      </editorialDecl>
+      <projectDesc>
+        <ab>
+          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
+        </ab>
+        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
+               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
+               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
+               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
+      </projectDesc>
+      <listPrefixDef>
+        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
+          <p>Rollen-Taxonomie</p>
+        </prefixDef>
+        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
+          <p>Datumstaxonomie</p>
+        </prefixDef>
+        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
+          <p>Thesaurustaxonomie</p>
+        </prefixDef>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2246">
+        <correspAction type="sent">
+          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
+            <forename>Leo</forename>
+            <surname>Spitzer</surname>
+          </persName>
+          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.59" key="#GID.1" ref="http://sws.geonames.org/2768497">Pörtschach</placeName>
+          <date when="1924-09-07">07.09.1924.</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
+            <forename>Hugo</forename>
+            <surname>Schuchardt</surname>
+          </persName>
+        </correspAction>
+      </correspDesc>
+      <textClass>
+        <keywords scheme="cirilo:normalizedPlaceNames">
+          <list>
+            <item>
+              <placeName xml:id="GID.1">
+                <country>Austria</country>
+                <settlement>Pörtschach am Wörthersee</settlement>
+                <name ref="http://geonames.org/2768497" type="fcode:PPL">Pörtschach am Wörthersee</name>
+                <location>
+                  <geo>14.14639,46.63639</geo>
+                </location>
+              </placeName>
+            </item>
+          </list>
+        </keywords>
+        <keywords ana="correspondence">
+          <list>
+            <item>
+              <ref target="info:fedora/context:hsa.letters.877" type="context">
+                        Korrespondenz Leo Spitzer - Hugo Schuchardt
+                     </ref>
+            </item>
+            <item>
+              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
+            </item>
+          </list>
+        </keywords>
+        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
+          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5074" type="skos:Concept">
+            <term type="skos:prefLabel" xml:lang="de">Völkerbund</term>
+          </term>
+        </keywords>
+        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
+        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
+        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
+      </textClass>
+      <langUsage>
+        <language ident="de">Deutsch</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <facsimile>
+    <surface>
+      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2246" xml:id="IMG.1">
+        <desc>
+          <ref
+            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
+        </desc>
+      </graphic>
+    </surface>
+    <surface>
+      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2246" xml:id="IMG.2">
+        <desc>
+          <ref
+            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
+        </desc>
+      </graphic>
+    </surface>
+    <surface>
+      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2246" xml:id="IMG.3">
+        <desc>
+          <ref
+            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
+        </desc>
+      </graphic>
+    </surface>
+    <surface>
+      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2246" xml:id="IMG.4">
+        <desc>
+          <ref
+            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
+        </desc>
+      </graphic>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div subtype="original" type="letter" xml:id="L.2246" xml:lang="de">
+        <pb facs="#IMG.1" n="1"/>
+        <dateline>Pörtschach, 7. Sept. 1924</dateline>
+        <opener>Verehrter lieber Freund,</opener>
+        <p>Ich meine eben, daß <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vosslers</persName> Seelenhaltung eine klassische [ist] und seine
+               Schriftstellerei im Gegensatz zu ihr steht, eine Reaktion, Selbstaufforderung oder
+               dgl. So erklärt sich, daß der Leser zwar gelegentlich den Eindruck des Launenhaften
+               von der Produktion, nicht aber der Beobachter vom Produzenten bekommt. Ich will also
+               nicht zugeben, daß ich mich "geirrt" hätte. Meine Einwände habe ich rückhaltlos
+               vorgebracht und ich freue mich vor allem, kein sacrifizio dell'intelletto notwendig
+               gehabt zu haben, um mir V.'s Neigung zu erkämpfen. Gern gestehe ich, daß ich s.g.
+               Mächtigen gegenüber an nichts mehr leide als die Integrität meiner Persönlichkeit zu
+               bewahren. Es ist mir jetzt eine Genugtuung, daß <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.4366">Frau Vossler</persName> in einem
+               langen und herrlich formvollendeten Dankbrief schreibt: "Sie wissen ja, daß mir bei
+               Ihnen noch ein anderer großer Wunsch in Erfüllung gegangen ist, daß mein Mann sich
+               einmal <pb
+            facs="#IMG.2"
+            n="2"/>richtig aussprechen konnte u. gerade mit einem
+               Kollegen, der jünger ist und kein 'Wachsabdruck'. Ich weiß auch, daß ihm nicht nur
+               das gut getan hat, sondern daß er Sie richtig lieb gewonnen hat. Und weil ihm das
+               sonst nicht leicht geschieht, freut es mich doppelt." Der 'Wachsabdruck' ist der
+               sklavische <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Lerch</persName>, über dessen Charakter V. sich keine Illusionen macht.</p>
+
+        <p>Sie erwähnen in Ihrem Brief auch die "äußere" Seite dieser Beziehung. Ich habe auch
+               in dieser Hinsicht nicht den geringsten Zweifel übrig gelassen, daß ich nach den
+               früheren Vorkommnissen und angesichts der Münchner Verhältnisse für mich selbst von
+               V. nichts erwarte. Als V. einmal sagte: "Wenn Lerch von <placeName
+            ref="https://gams.uni-graz.at/o:hsa.places#PL.42">München</placeName> wegkommt, so
+               kann der Spitzer Gift darauf nehmen, daß er hin­kommt", antwortete ich schlagfertig:
+               "So kann <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2701">Schürr</persName>
+               Gift darauf nehmen". Und tatsächlich ist mir auch der Gedanke widerlich, durch ein
+               Sommerzusammensein für Berufschancen vorgearbeitet zu haben.</p>
+        <p>Daß <placeName
+            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName> für
+               mich kein Boden mehr wäre, ist mir aus den Äußerungen <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.5266">Hahn</persName>'s, <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.2516">Richter</persName>'s, <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.4365">Küchler</persName>'s ganz klar.
+               Hat man doch die Dekanwahl des aus altem deutschen <pb
+            facs="#IMG.3"
+            n="3"/>Geschlecht stammenden Arnim hintertrieben, weil er ein paarmal liberal abgestimmt –
+               und einen Juden zum Schwiegersohn hat. El. Richter bezieht eine minimale Remuneration
+               (750.000 K monatlich) und es scheint, daß weder <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1459">Herr Ettm</persName>. noch
+               Küchler Lust oder Macht haben, das zu ändern.</p>
+        <p>Schürr hat mich nun auch besucht. Sein wesentliches Leiden ist – die Frauenlosigkeit.
+               Unfähig ewige Treue Einem Wesen anzugeloben und unfähig ohne eine Frau zu leben,
+               martert er sich. Gewiß eine traurige Situation, die wohl jeder Mann durchmachen muß.
+               Auch über seine Carriere scheint er etwas pessimistisch zu sein, obwohl ich ihm
+               vorstellte, daß er, wenn ich einmal versorgt sei, und vielleicht auch schon vorher,
+               keine Konkurrenten habe.</p>
+        <p>
+          <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.3710">Theo</persName> macht mir
+               trotz allem Sorgen. <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.3709">Sein
+                  Bruder</persName> bezeugt und er selbst gesteht, daß er in den ersten 2 Semestern
+               wohl kaum Vorlesungen besucht habe, sondern mit Frauen herumgezogen sei. Die
+               Entschuldigung, <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.3054">Zauners</persName> und <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.2727">Seufferts</persName> Vorlesungen hätten ihn nicht gereizt, begegnete ich mit dem
+                  <pb
+            facs="#IMG.4"
+            n="4"/>Einwurf, daß er auch keine Bücher über die betr.
+               Gegenstände gelesen habe. So sehr ich für den Lebensgenuß bin – ich bedauere ja, daß
+               ich bis zum 28. Jahr nichts erlebt habe –, so muß er doch irgendwelchen
+               Bildungstendenzen untergeordnet sein. Ein Bohèmeleben und ein Nur-Bohème-Leben ist
+               mir nicht sehr sympathisch. Ich habe natürlich in diesem Sinn gepredigt. Übrigens
+               hatte <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">Papa R.</persName>
+               mir das Konzept dadurch verdorben, daß er aus Graz einen Katalog (buchstäblich!) mit
+               einem Sündenregister Theos (Verfehlungen bei den Verwandten, bei denen er wohnt, eine
+               Schuld von 250.000 K etc.) mitbrachte u. strafend hervorzog, was natürlich auf Theo
+               mehr lächerlich als ernst gewirkt hat.</p>
+        <p>Ich verstehe die <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName>'sche Arbeitsweise nicht mehr. Das <hi
+            rend="unknown" rendition="#none">eslata</hi> kam mir gleich sehr fraglich vor. Nun haben Sie es ja
+               erklärt und sollten das publizieren.</p>
+        <p>
+          <persName
+            ref="https://gams.uni-graz.at/o:hsa.persons#P.2460">Puşcariu</persName>
+               schrieb mir, er wolle mich Anfang Oktober in <placeName
+            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> auf der Rückkehr
+               von der Genfer <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5074">Völkerbund</ref>tagung besuchen. Ich werde ihn also nicht treffen.</p>
+        <p>Wir sind nun ganz allein und haben Zeit, uns in uns zu vertiefen, den
+               Sommererinnerungen nachzuträumen und der herbstlichen Blattvergilbung gleich einer
+               Vergilbung der Erlebnisse beizuwohnen. Hoffentlich sind Sie bald von Wettereinflüssen
+               frei und können wieder frei schaffen.</p>
+        <closer>
+          <salute>Alles Liebe vom</salute>
+          <lb/>
+          <signed>
+            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
+          </signed>
+        </closer>
+      </div>
+    </body>
+  </text>
+</TEI>
