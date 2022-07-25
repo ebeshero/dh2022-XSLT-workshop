@@ -1,0 +1,1 @@
+wordType,percentLabelZ,0.97A,2.14R,7.96D,9.51P,10.1C,12.82S,15.53N,17.86V,20.19
