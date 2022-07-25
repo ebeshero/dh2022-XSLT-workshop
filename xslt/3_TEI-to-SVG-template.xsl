@@ -16,7 +16,6 @@
         plot *up* from zero by using negative Y values. 
         We'll multiply all Y values by a $ySpacer variable that we set as a negative number. That lets us work
         with the count() and other numerical calculations we perform with XPath and just plot them in negative coordinate space. 
-      
     -->  
     
     <!--We modify the XML collection variable here in order to select only the files that have encoded persName elements. -->
