@@ -16,7 +16,7 @@ We will be working with the oXygen XML Editor in this workshop, which you should
 ### Accessing workshop files:
 
 * Download this zipped directory to your computer and unzip to access the files:
-https://drive.google.com/file/d/1U7iIzxMQZRPn4M0n_hdVs_30AQ61XWiA/view?usp=sharing 
+<https://drive.google.com/file/d/1U7iIzxMQZRPn4M0n_hdVs_30AQ61XWiA/view?usp=sharing> 
 
 * Alternatively, if you know you're way with GitHub, simply clone our repository at <https://github.com/ebeshero/dh2022-XSLT-workshop/>
 
