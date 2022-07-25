@@ -8,7 +8,7 @@
     
     <xsl:output method="xhtml" html-version="5" indent="yes"></xsl:output>
     
-    <xsl:variable name="letters" select="collection('../xml/?select=*.xml')"/>
+    <xsl:variable name="letters" as="document-node()+" select="collection('../xml/?select=*.xml')"/>
     
     <xsl:template match="/">
         <html>

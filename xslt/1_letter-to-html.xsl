@@ -6,10 +6,27 @@
     xmlns="http://www.w3.org/1999/xhtml"
     version="3.0">
     
-    <xsl:output method="xhtml" html-version="5" indent="no"></xsl:output>
+<!-- 2022-07-24 ebb: This XSLT is designed to read a collection of XML files. It will
+        output a separate HTML file for each TEI XML letter in our letters folder. 
+        You can run it in the XSLT debugger view by selecting any file at all as the XML source.
+        (We usually choose a file from within the collection.)
+    -->
+    
+<!-- ebb: Uncomment if processing only one file, and remove the xsl:for-each in the template match on `/`. 
+        <xsl:output method="xhtml" html-version="5" indent="no"/>-->
+   
+    
+    <xsl:variable name="letters" as="document-node()+" select="collection('../xml/?select=*.xml')"/>
     
     <xsl:template match="/">
-        <html>
+       <xsl:for-each select="$letters"> 
+           <xsl:variable name="filename" as="xs:string" select="base-uri() ! tokenize(., '/')[last()]"/>
+           <xsl:result-document method="xhtml" html-version="5" indent="yes" href="../output/html-letters/{$filename}">
+           <!-- ebb: In the lines above, we create an xsl:for-each statement that looks at 
+           each file in the XML letters colection in turn. We set a variable that returns its filename, and 
+           then we use that in xsl:result-document, which outputs a new HTML file in the folder we designate.
+           -->
+           <html>
             <head>
                 <title><xsl:value-of select="//titleStmt/title" /></title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -20,6 +37,8 @@
                 </section>
             </body>
         </html>
+           </xsl:result-document>
+       </xsl:for-each>
     </xsl:template>
     
     <xsl:template match="div">
@@ -39,11 +58,11 @@
     </xsl:template>
     
     <xsl:template match="w | pc">
-        <xsl:apply-templates select="normalize-space(text())"/>
+        <xsl:apply-templates select="text() ! normalize-space()"/>
     </xsl:template>
     
-    <xsl:template match="persName">
-        <em>
+    <xsl:template match="*[@ref] | *[@corresp]">
+        <em style="color:red;">
             <xsl:apply-templates />
         </em>
     </xsl:template>
@@ -54,5 +73,12 @@
     
     <xsl:template match="note" />
     <xsl:template match="choice | orig | reg" />
+    
+   <xsl:template match="text()">
+        <xsl:value-of select="normalize-space(.)"/>
+    </xsl:template>
+    <!-- kn ebb ms: This template is necessary for proper space-handling of Japanese text output. 
+    For elaboration, process the Japanese letter file with and without this template, look at the 
+    output view as code, and search for spaces. Japanese literation should not include spacing between words. -->
     
 </xsl:stylesheet>
