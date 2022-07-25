@@ -32,17 +32,7 @@
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
             </head>
             <body>
-                <!-- ebb: Here we pull data from the correspDesc to represent at the top of the HTML page.-->
-                <section id="correspDesc">
-                    <h2>Correspondence information</h2>
-                    <ul>
-                        <li>Sent by <xsl:apply-templates select="//correspAction[@type='sent']//persName"/>, from <xsl:apply-templates select="//correspAction[@type='sent']//location/placeName"/> on <xsl:apply-templates select="//correspAction[@type='sent']//date/@when"/></li>
-                        <li>Received by: 
-                            <xsl:apply-templates select="//correspAction[@type='received']//persName"/>
-                            <xsl:if test="//correspAction[@type='received']//placeName"> at <xsl:apply-templates select="//correspAction[@type='received']//placeName"/></xsl:if></li>
-                    </ul>
-                </section>
-                
+
               <!--Here we begin to "push process" the letter contents: -->  
                 <section id="letter">
                     <xsl:apply-templates select="//text/body"/>
