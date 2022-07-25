@@ -55,7 +55,7 @@
         </p>
     </xsl:template>
 
-    
+ <!-- ebb: In the following two templates, we apply some CSS color highlighting to proper names, or to nouns with determiners (in the Spanish letter) using the HTML <em> element and  @style attribute  -->   
     <xsl:template match="*[@ref] | *[@corresp] | w[@pos='N']">
         <em style="color:red;">
             <xsl:apply-templates />
