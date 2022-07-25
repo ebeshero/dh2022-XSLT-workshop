@@ -22,13 +22,13 @@
     <xsl:variable name="personLetters" as="document-node()+" select="collection('../xml/?select=*.xml')[descendant::persName]"/> 
     
     <!-- Create xSpacer and ySpacer variables just for scaling the plot. We typically want values in the hundreds or thousands. -->
-    <xsl:variable name="xSpacer" as="xs:integer" select="500"/>
-    <xsl:variable name="ySpacer" as="xs:integer" select="-5"/>
+    <xsl:variable name="xSpacer" as="xs:integer" select="150"/>
+    <xsl:variable name="ySpacer" as="xs:integer" select="-30"/>
     
     <xsl:variable name="maxPersonCount">
        <xsl:variable name="allCounts" as="xs:integer+"> 
            <xsl:for-each select="$personLetters">
-            <xsl:value-of select="count(descendant::persName)"/>
+            <xsl:value-of select="descendant::persName/@ref ! normalize-space() => distinct-values() => count()"/>
         </xsl:for-each>
        </xsl:variable>
         <xsl:value-of select="$allCounts => max()"/>
@@ -37,11 +37,12 @@
     
     
     <xsl:template match="/">
-        <svg viewBox="0 0 {count($personLetters) * $xSpacer}  {$maxPersonCount * 8}">
+        
+        <svg width="100%" height="{$maxPersonCount * 2}">
           <!-- With these values in @viewBox, we create a canvas that stretches from 0 0 to the max X and Y coordinates. 
           NOTE: if we double the max X and max Y values here, we'll proportionally **reduce** the overall scale of the plot. 
           -->
-        <g transform="translate(10, {$maxPersonCount * 6})"> 
+        <g transform="translate(10, 2500)"> 
          <!-- <g> just groups elements inside together. 
              transform="translate()" cpmverts 0,0 (the top left of the screen) 
          down to the bottom of the viewable canvas.) The multipliers are sort of ballpark estimates 
@@ -52,21 +53,34 @@
          We're using an Attribute Value Template to use XPath to calculate the attribute value. 
          -->
               
-              <line x1="0" y1="0" x2="{count($personLetters) * $xSpacer}" y2="0" stroke="black" stroke-width="4"/>
+              <line id="x-Axis" x1="0" y1="0" x2="{count($personLetters) * $xSpacer}" y2="0" stroke="black" stroke-width="4"/>
         
             <!-- Y axis: This time X does not vary and y stretches upward from zero to its negative max value. -->
             
-            <line x1="0" y1="0" x2="0" y2="{$ySpacer * $maxPersonCount}" stroke="black" stroke-width="4"/>
+            <line id="y-Axis" x1="0" y1="0" x2="0" y2="{$ySpacer * $maxPersonCount}" stroke="black" stroke-width="4"/>
         
-        <g>
+        <!-- hash lines and text labels on Y axis-->
+            <line class="hash" stroke="green" stroke-width="20" x1="-10" y1="{$ySpacer * $maxPersonCount div 2}"  x2="10"  y2="{$ySpacer * $maxPersonCount div 2}"/>    
+            <text x="-50" y="{$ySpacer * $maxPersonCount div 2}"><xsl:value-of select="$maxPersonCount div 2"/></text>
+            
+            <g class="bar">
             <!--ebb: Inside this <g>, we'll plot labels and bars going up the Y axis, using xsl:for-each. 
             I like to mkae rectangles using the line element and setting a stroke-width to make it thick.
             -->
+                
+                <xsl:for-each select="$personLetters">
+                    <xsl:sort select="current()//persName/@ref ! normalize-space() => distinct-values() => count() "/>
+                    <xsl:variable name="count" as="xs:integer" select="current()//persName/@ref ! normalize-space() => distinct-values() => count() "/>
+                    
+                    <line stroke="blue" stroke-width="100" x1="{position() * $xSpacer}" y1="0" x2="{position() * $xSpacer}" y2="{$count * $ySpacer}"/>
+                    
+                    
+                </xsl:for-each>
             
          
             
             
-        </g>
+            </g>
         
             
          </g>
