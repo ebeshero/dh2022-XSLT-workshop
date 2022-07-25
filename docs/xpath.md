@@ -19,7 +19,7 @@ XPath is a syntax used in XSLT, XQuery, and other programming languages to navig
 
 - What XPath would find the paragraphs in the file?
 - What XPath would find only the paragraphs inside the body?
-- What XPath identifies the \<salute\> elements inside the \<closer\>?   
+- What XPath identifies only the \<persName\> element inside the \<closer\>?   
 - What XPath would find the name of the sender?
 
 ## For letters with names encoded

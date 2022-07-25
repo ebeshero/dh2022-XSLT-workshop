@@ -20,8 +20,8 @@ XPath is a syntax used in XSLT, XQuery, and other programming languages to navig
     - `//p` or `descendant::p` 
 - What XPath would find only the paragraphs inside the body?
     - `//body//p` or `descendant::body/descendant::p` 
-- What XPath identifies the \<salute\> elements inside the \<closer\>?   
-     - `//closer/salute` or `descendant::closer/child::salute` 
+- What XPath identifies only the \<persName\> element inside the \<closer\>?   
+     - `//closer//persName` or `descendant::closer/descendant::salute` 
 - What XPath would find the name of the sender?
      - `//correspAction[@type='sent']/persName`
 
