@@ -13,14 +13,106 @@
             x1="0"
             y1="0"
             x2="0"
-            y2="-250"
+            y2="-125"
             stroke="black"
             stroke-width="2"/>
-      <text class="y-hash" x="-30" y="-245">50%</text>
-      <text id="title" x="100" y="-270">Proportions of Word Types in the Spanish Letter</text>
+      <text class="y-hash" x="-30" y="-120">25%</text>
+      <text id="title" x="100" y="-145">Proportions of Word Types in the Spanish Letter</text>
       <!--
             Wordcount: 515 
             Types of words: 9
             Word types: N, D, A, V, S, C, P, R, Z-->
+      <g class="wordTypeData">
+         <line x1="25"
+               x2="25"
+               y1="0"
+               y2="-4.854368932038835"
+               stroke="pink"
+               stroke-width="25"/>
+         <text class="wordType" x="25" y="20">Z</text>
+         <text class="percentLabel"
+               x="16.666666666666666667"
+               y="-19.854368932038835">0.97%</text>
+         <line x1="75"
+               x2="75"
+               y1="0"
+               y2="-10.679611650485437"
+               stroke="coral"
+               stroke-width="25"/>
+         <text class="wordType" x="75" y="20">A</text>
+         <text class="percentLabel"
+               x="66.666666666666666667"
+               y="-25.679611650485437">2.14%</text>
+         <line x1="125"
+               x2="125"
+               y1="0"
+               y2="-39.80582524271845"
+               stroke="indianred"
+               stroke-width="25"/>
+         <text class="wordType" x="125" y="20">R</text>
+         <text class="percentLabel"
+               x="116.666666666666666667"
+               y="-54.80582524271845">7.96%</text>
+         <line x1="175"
+               x2="175"
+               y1="0"
+               y2="-47.57281553398058"
+               stroke="pink"
+               stroke-width="25"/>
+         <text class="wordType" x="175" y="20">D</text>
+         <text class="percentLabel"
+               x="166.666666666666666667"
+               y="-62.57281553398058">9.51%</text>
+         <line x1="225"
+               x2="225"
+               y1="0"
+               y2="-50.48543689320389"
+               stroke="coral"
+               stroke-width="25"/>
+         <text class="wordType" x="225" y="20">P</text>
+         <text class="percentLabel"
+               x="216.666666666666666667"
+               y="-65.48543689320388">10.1%</text>
+         <line x1="275"
+               x2="275"
+               y1="0"
+               y2="-64.07766990291262"
+               stroke="indianred"
+               stroke-width="25"/>
+         <text class="wordType" x="275" y="20">C</text>
+         <text class="percentLabel"
+               x="266.666666666666666667"
+               y="-79.07766990291262">12.82%</text>
+         <line x1="325"
+               x2="325"
+               y1="0"
+               y2="-77.66990291262135"
+               stroke="pink"
+               stroke-width="25"/>
+         <text class="wordType" x="325" y="20">S</text>
+         <text class="percentLabel"
+               x="316.666666666666666667"
+               y="-92.66990291262135">15.53%</text>
+         <line x1="375"
+               x2="375"
+               y1="0"
+               y2="-89.32038834951456"
+               stroke="coral"
+               stroke-width="25"/>
+         <text class="wordType" x="375" y="20">N</text>
+         <text class="percentLabel"
+               x="366.666666666666666667"
+               y="-104.32038834951456">17.86%</text>
+         <line x1="425"
+               x2="425"
+               y1="0"
+               y2="-100.97087378640778"
+               stroke="indianred"
+               stroke-width="25"/>
+         <text class="wordType" x="425" y="20">V</text>
+         <text class="percentLabel"
+               x="416.666666666666666667"
+               y="-115.97087378640778">20.19%</text>
+      </g>
    </g>
 </svg>
