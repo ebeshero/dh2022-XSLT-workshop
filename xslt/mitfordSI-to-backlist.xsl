@@ -8,11 +8,24 @@
 
     
     <xsl:variable name="si" as="document-node()" select="document('https://digitalmitford.org/si.xml')"/>
-    <xsl:variable name="siRefs" as=""
+    <xsl:variable name="siRefs" as="xs:string+" select="//*/@ref ! normalize-space() ! substring-after(., '#') => distinct-values()"/>
+    
+    <xsl:template name="backListConstructor" as="element()+">
+        <xsl:for-each select="$si//*[@sortKey][descendant::*[@xml:id = $siRefs]]">
+            <xsl:element name="{name()}">
+                <xsl:attribute name="sortKey"><xsl:value-of select="@sortKey"/>
+                </xsl:attribute>
+                    <xsl:for-each select="current()//*[@xml:id=$siRefs]">
+                        <xsl:copy-of select="current()"/>
+                    </xsl:for-each>
+            </xsl:element>
+            
+        </xsl:for-each>
+    </xsl:template>
+    
   <xsl:template match="TEI">
       <back>
-          
-          
+         <xsl:call-template name="backListConstructor"/>
       </back>
   </xsl:template>
     
