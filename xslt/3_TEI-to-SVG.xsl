@@ -44,6 +44,14 @@
             Types of words: <xsl:value-of select="$countTypes"/>
             Word types: <xsl:value-of select="string-join($wordTypes, ', ')"/>
         </xsl:comment> 
+                
+                <g class="wordTypeData">
+                    <xsl:for-each select="$wordTypes">
+                        <!-- For each word type, return a percentage based on its count divided by the total word count * 100.-->
+                        
+                        
+                    </xsl:for-each>
+                </g>
             </g>
         </svg>
       </xsl:template>
