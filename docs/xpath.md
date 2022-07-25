@@ -3,7 +3,7 @@ XPath is a syntax used in XSLT, XQuery, and other programming languages to navig
 
 # XPath navigation
 - Navigate `child::` and `descendant::` axes
-- Try the `preceding-sibling` and `preceding-sibling` axes. (There are "following" equivalents to both of these.) 
+- Try the `preceding` and `preceding-sibling` axes. (There are "following" equivalents to both of these.) 
 - Apply predicates as boolean filters, using `[. . .]`
 - Look at XPath functions: 
     - `normalize-space()`
@@ -18,13 +18,17 @@ XPath is a syntax used in XSLT, XQuery, and other programming languages to navig
 # Workshop XPath expressions 
 
 - What XPath would find the paragraphs in the file?
+- What XPath would find only the paragraphs inside the body?
 - What XPath identifies the \<salute\> elements inside the \<closer\>?   
 - What XPath would find the name of the sender?
 
 ## For letters with names encoded
-- What XPath will find all the person names encoded in the letter? How many of these are there?
+- What XPath will find all the person names encoded in the letter? 
+- How many of these are there?
+- What XPath will find the values of the @ref attribute in the \<persName> elements?
+- Which function will find the distinct attributte values? 
 
-## For letters with parts of speech encoded
+## For letters with parts of speech encoded (The following questions only apply to the Spanish example):
 Write XPath expressions to isolate different parts of speech, working carefully with predicate expressions. 
 - What XPath will find all the nouns (pos='N')?
 - How many of these are there? 
