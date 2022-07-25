@@ -13,7 +13,7 @@
     -->
     
 <!-- ebb: Uncomment if processing only one file, and remove the xsl:for-each in the template match on `/`. 
-        <xsl:output method="xhtml" html-version="5" indent="no"/>-->
+        <xsl:output method="xhtml" html-version="5" indent="yes"/>-->
    
     
     <xsl:variable name="letters" as="document-node()+" select="collection('../xml/?select=*.xml')"/>
